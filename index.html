@@ -1,0 +1,2315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>QLAUDIO - VST & Plugins</title>
+    <meta name="description"
+        content="QLAUDIO provides professional K-Pop and Orchestral virtual instruments. Experience the authentic sounds of the Josun Series and high-quality MIDI packs for your music production." />
+    <meta name="keywords"
+        content="VST, Kontakt Library, MIDI Packs, Korean Instruments, Josun Series, Sound Design, Music Production" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="QLAUDIO - Software Instruments & Audio Plugins"" />
+    <meta property=" og:description"
+        content="Discover the authentic sounds of the Josun Series and premium MIDI collections." />
+    <!-- Ideally absolute URL, but relative works for some previews if hosted correctly -->
+    <meta property="og:image" content="./assets/images/vst/josun_platinum.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="QLAUDIO - Software Instruments & Audio Plugins" />
+    <meta property="twitter:description"
+        content="Discover the authentic sounds of the Josun Series and premium MIDI collections." />
+    <meta property="twitter:image" content="./assets/images/vst/josun_platinum.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="./assets/favicon/logo-white.webp">
+
+    <link rel="stylesheet" href="./styles.css?v=2">
+</head>
+
+<body>
+    <header class="siteHeader">
+        <div class="navShell">
+            <div class="navBar">
+                <a class="navBrand" href="./index.html">QLAUDIO</a>
+
+                <nav class="navLinks" aria-label="Main Menu">
+                    <a href="#product">Software Instrument</a>
+                    <a href="#plugins">Audio PlugIns</a>
+                    <a href="#product/midi-bundle">Sample Pack</a>
+                    <a href="#support-view">Support</a>
+                </nav>
+
+                <div class="navIcons">
+                    <a href="https://app.lemonsqueezy.com/my-orders" target="_blank"
+                        style="font-size: 13px; font-weight: 700; color: #bbb; margin-right: 8px; text-decoration: none;">My
+                        Order</a>
+
+                    <button class="menuBtn" data-menu-btn>MENU</button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mnav" data-mnav hidden>
+                <a href="#product">Software Instrument</a>
+                <a href="#plugins">Audio PlugIns</a>
+                <a href="#product/midi-bundle">Sample Pack</a>
+                <!-- <a href="#presets">Presets</a> -->
+                <a href="#support-view">Support</a>
+                <a href="https://app.lemonsqueezy.com/my-orders" target="_blank">My Order</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- VIEW: HOME -->
+        <div id="view-home" class="view-section">
+            <!-- HERO -->
+            <section class="hero">
+                <canvas id="landingCanvas" class="heroBg reveal"></canvas>
+                <div class="heroText reveal">
+                    <div class="heroKicker">VST & PLUGINS</div>
+                    <h1 class="heroTitle">QLAUDIO<br>State of<br>the Art.</h1>
+                    <p class="heroSub">
+                        Complexity Simplified.<br>
+                        Sound Redefined.
+                    </p>
+                    <a href="#product/QLAUDIOswell" class="btnBlack" data-link>Start Now</a>
+                </div>
+            </section>
+
+            <!-- CATEGORY BAR -->
+            <section class="catBar">
+                <div class="wrap catInner reveal">
+                    <div class="catTitle">Categories</div>
+                    <div class="catIcons">
+                        <a href="#product" class="catIcon">
+                            <!-- Waveform Icon -->
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M2 12h2l2-6 4 12 4-12 2 6h2" />
+                            </svg>
+                            <div>Software Instruments</div>
+                        </a>
+                        <a href="#plugins" class="catIcon">
+                            <!-- Sliders Icon -->
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6" />
+                            </svg>
+                            <div>Audio Plugins</div>
+                        </a>
+                        <a href="#product/midi-bundle" class="catIcon">
+                            <!-- Disc Icon -->
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            <div>Sample Packs</div>
+                        </a>
+                        <!-- <a href="#" class="catIcon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                            <div>Presets</div>
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- AWARDS SECTION -->
+            <section class="awards">
+                <div class="wrap reveal">
+                    <h2 class="awSectionTitle">Awards & Recognition</h2>
+                    <div class="awGrid">
+                        <div class="awItem">
+                            <div class="awIcon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M8 21h8m-4-18v18M12 3a6 6 0 0 0-6 6c0 3.5 2.5 6 6 6s6-2.5 6-6a6 6 0 0 0-6-6Z" />
+                                    <path
+                                        d="M6 9H3a2 2 0 0 0-2 2v2c0 2 1.5 3.5 3.5 4L6 15m12-6h3a2 2 0 0 1 2 2v2c0 2-1.5 3.5-3.5 4L18 15" />
+                                </svg>
+                            </div>
+                            <div class="awYear">2025</div>
+                            <div class="awTitle">Presidential Award</div>
+                            <div class="awDesc">Public Data Startup<br>Competition</div>
+                            <div class="awSub">Grand Prize</div>
+                        </div>
+                        <div class="awItem">
+                            <div class="awIcon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 15c-3.3 0-6-2.7-6-6V3h12v6c0 3.3-2.7 6-6 6Z" />
+                                    <path d="M9 15v3h6v-3" />
+                                    <path d="M6 21h12" />
+                                    <circle cx="12" cy="7" r="2" />
+                                </svg>
+                            </div>
+                            <div class="awYear">2025</div>
+                            <div class="awTitle">Minister's Award</div>
+                            <div class="awDesc">Culture Digital Innovation<br>& Data Utilization</div>
+                            <div class="awSub">Grand Prize</div>
+                        </div>
+                        <div class="awItem">
+                            <div class="awIcon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="7" />
+                                    <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.12" />
+                                </svg>
+                            </div>
+                            <div class="awYear">2024</div>
+                            <div class="awTitle">Agency Grand Prize</div>
+                            <div class="awDesc">Startup One-Stop<br>IR Pitching</div>
+                            <div class="awSub">1st Place</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- JOSUN SERIES SECTION -->
+            <section class="josun" id="josun" style="background:#fff; padding: 140px 0;">
+                <div class="wrap">
+                    <div class="josunHeader reveal">
+                        <h2 class="josunTitle">Korean<br>Traditional<br>Instruments</h2>
+                    </div>
+
+                    <div class="josunHeritageGraphic reveal">
+                        <div class="jh-card main">
+                            <div class="jh-label">Official Audio</div>
+                            <h3 class="jh-head">National<br>Gugak Center</h3>
+                            <p class="jh-sub">
+                                Produced using officially created audio from<br>Korea's premier musical institution.
+                            </p>
+                        </div>
+                        <div class="jh-card accent">
+                            <div class="jh-stat">1,000</div>
+                            <div class="jh-stat-label">Years of History</div>
+                            <p class="jh-text">
+                                Capturing the breath and soul of<br>a millennium.
+                            </p>
+                        </div>
+                        <div class="jh-card">
+                            <div class="jh-label">Source</div>
+                            <h3 class="jh-head">Intangible<br>Cultural Property</h3>
+                            <p class="jh-sub">
+                                Recorded by state-recognized<br>master artists.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="jh-footer-text reveal">
+                        The Definitive K-Sound Collection.<br>
+                        <span style="opacity:0.6">Authentic voice of Korea.</span>
+                    </div>
+
+                    <!-- FEATURED: PLATINUM BUNDLE -->
+                    <div class="josunFeatured reveal">
+                        <div class="jf-content">
+                            <div class="jf-tag">Best Value</div>
+                            <h3 class="jf-name">Josun Series<br>Platinum Bundle</h3>
+                            <p class="jf-text">The complete collection of Woodwinds, Strings, and Percussions.<br>Get
+                                the full authentic sound of Korea in one package.</p>
+                            <div class="jf-price">$299.00 <span
+                                    style="font-size: 0.6em; text-decoration: line-through; color: #999; margin-left: 10px;">$499.00</span>
+                                <span style="font-size: 16px; color: #FF8A80; margin-left:12px; font-weight: 700;">Save
+                                    $200.00</span>
+                            </div>
+                            <a href="#product/josun-platinum" class="btnBlack">View Bundle</a>
+                        </div>
+                        <div class="jf-visual">
+                            <a href="#product">
+                                <img src="https://ecimg.cafe24img.com/pg1160b39285111053/qlaudio/web/product/extra/big/20250503/b5f8776142069849619888da0bffd026.png"
+                                    alt="Platinum Bundle">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- NEW: Instrument Showcase (GUI) -->
+                    <div class="josun-gui-section reveal" style="margin: 120px 0;">
+                        <div class="gui-intro" style="margin-bottom: 60px;">
+                            <h3 style="font-size: 32px; font-weight: 700; color: #111; margin-bottom: 16px;">The
+                                Authentic Sounds</h3>
+                            <p style="color: #666; font-size: 18px; line-height: 1.6; max-width: 600px;">
+                                We recorded the most iconic instruments of Korea with state-of-the-art technology.
+                                Explore the unique timbre of each family.
+                            </p>
+                        </div>
+
+                        <div class="gui-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                            <!-- Strings -->
+                            <div class="gui-card" style="text-align: left;">
+                                <div class="gui-img-wrap"
+                                    style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); margin-bottom: 24px; transition: transform 0.3s; background: #f5f5f5;"
+                                    onmouseover="this.style.transform='translateY(-10px)'"
+                                    onmouseout="this.style.transform='translateY(0)'">
+                                    <img src="assets/images/StringsGUI.webp" alt="Strings GUI"
+                                        style="width: 100%; display: block;">
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #111;">Strings
+                                    (Hyeon-ak)</h4>
+                                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                                    Gayageum, Geomungo, Haegeum, Ajaeng.<br>
+                                    Deep resonance of silk strings. From the bending notes (Nonghyeon) to the sharp
+                                    attacks.
+                                </p>
+                            </div>
+
+                            <!-- Woodwinds -->
+                            <div class="gui-card" style="text-align: left;">
+                                <div class="gui-img-wrap"
+                                    style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); margin-bottom: 24px; transition: transform 0.3s; background: #f5f5f5;"
+                                    onmouseover="this.style.transform='translateY(-10px)'"
+                                    onmouseout="this.style.transform='translateY(0)'">
+                                    <img src="assets/images/WoodwindsGUI.webp" alt="Woodwinds GUI"
+                                        style="width: 100%; display: block;">
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #111;">
+                                    Woodwinds (Gwan-ak)</h4>
+                                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                                    Daegeum, Sogeum, Piri, Taepyeongso.<br>
+                                    The breath of nature. Expressive vibrato and dynamic airflow control.
+                                </p>
+                            </div>
+
+                            <!-- Percussion -->
+                            <div class="gui-card" style="text-align: left;">
+                                <div class="gui-img-wrap"
+                                    style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); margin-bottom: 24px; transition: transform 0.3s; background: #f5f5f5;"
+                                    onmouseover="this.style.transform='translateY(-10px)'"
+                                    onmouseout="this.style.transform='translateY(0)'">
+                                    <img src="assets/images/PercussionGUI.webp" alt="Percussion GUI"
+                                        style="width: 100%; display: block;">
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #111;">
+                                    Percussion (Ta-ak)</h4>
+                                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                                    Janggu, Buk, Jing, Kkwaenggwari.<br>
+                                    The heartbeat of tradition. Sampled with extensive velocity layers for ultimate
+                                    realism.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MIDI PACK SECTION -->
+            <section class="midi-section-teaser" id="midi-teaser"
+                style="background: #000; color: #fff; padding: 140px 0; border-top: 1px solid #222;">
+                <div class="wrap box" style="text-align: center;">
+                    <div class="reveal">
+                        <!-- Hook -->
+                        <h2
+                            style="font-size: 56px; font-weight: 800; margin-bottom: 24px; color: #fff; letter-spacing: -2px; line-height: 1.1;">
+                            Want amazing piano lines<br>
+                            <span style="color: #666;">without being a virtuoso?</span>
+                        </h2>
+
+                        <p
+                            style="font-size: 20px; color: #ddd; margin-bottom: 50px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+                            "Hate how audio samples distort when changing key?"<br>
+                            Stop searching for the right loop. Start composing with <strong>100% Flexible MIDI</strong>.
+                        </p>
+
+                        <!-- Brief Info Grid -->
+                        <div
+                            style="display: flex; justify-content: center; gap: 40px; margin-bottom: 60px; flex-wrap: wrap;">
+                            <div style="text-align: center; max-width: 200px;">
+                                <div style="font-size: 32px; margin-bottom: 12px;">🎹</div>
+                                <h4 style="color: #fff; margin-bottom: 8px;">Total Freedom</h4>
+                                <p style="color: #888; font-size: 14px;">Change Key, Tempo, and Sound without quality
+                                    loss.</p>
+                            </div>
+                            <div style="text-align: center; max-width: 200px;">
+                                <div style="font-size: 32px; margin-bottom: 12px;">🎶</div>
+                                <h4 style="color: #fff; margin-bottom: 8px;">5 Emotional Themes</h4>
+                                <p style="color: #888; font-size: 14px;">Lo-Fi, Jazz, Neo Soul, Pop, and R&B tailored
+                                    for you.</p>
+                            </div>
+                            <div style="text-align: center; max-width: 200px;">
+                                <div style="font-size: 32px; margin-bottom: 12px;">🎁</div>
+                                <h4 style="color: #fff; margin-bottom: 8px;">Save on Bundle</h4>
+                                <p style="color: #888; font-size: 14px;">Get all 5 packs in Series 1 at a special bundle
+                                    price.</p>
+                            </div>
+                        </div>
+
+                        <!-- GIF Demo -->
+                        <div class="midi-demo reveal" style="text-align: center; margin-bottom: 120px;">
+                            <img src="assets/images/drag&drop.webp" alt="Drag and Drop MIDI"
+                                style="max-width: 100%; border-radius: 16px; box-shadow: 0 0 0 1px #333, 0 40px 100px rgba(0,0,0,0.8);">
+                            <p style="margin-top: 24px; color: #666; font-size: 16px;">Works perfectly at any BPM with
+                                zero quality loss.</p>
+                        </div>
+
+                        <!-- Products Grid -->
+                        <div class="midi-grid-header reveal" style="text-align: center; margin-bottom: 60px;">
+                            <h3 style="font-size: 32px; margin-bottom: 16px;">5 Emotional Line-ups</h3>
+                            <p style="color: #666;">Curated for your musical narrative.</p>
+                        </div>
+
+                        <div class="midi-grid reveal"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto 120px auto;">
+                            <!-- Pack 1 -->
+                            <div class="midi-card">
+                                <div class="mc-img"><img src="assets/images/Nocturne Groove MIDI Pack.webp"
+                                        alt="Nocturne Groove"></div>
+                                <div class="mc-info">
+                                    <h3>Nocturne Groove</h3>
+                                    <p class="mc-desc">Vibe of Nujabes & DJ Okawari. Urban melodies of J-Jazz Hiphop.
+                                    </p>
+                                    <div class="mc-foot"><span class="mc-price"><span
+                                                style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                            href="#product/midi-bundle" class="btnSmall">View Details</a></div>
+                                </div>
+                            </div>
+                            <!-- Pack 2 -->
+                            <div class="midi-card">
+                                <div class="mc-img"><img src="assets/images/Tyoko Sky MIDI Pack.webp" alt="Tokyo Sky">
+                                </div>
+                                <div class="mc-info">
+                                    <h3>Tokyo Sky</h3>
+                                    <p class="mc-desc">Emotional swell like 'Your Name'. Intense Anime-style J-Core.</p>
+                                    <div class="mc-foot"><span class="mc-price"><span
+                                                style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                            href="#product/midi-bundle" class="btnSmall">View Details</a></div>
+                                </div>
+                            </div>
+                            <!-- Pack 3 -->
+                            <div class="midi-card">
+                                <div class="mc-img"><img src="assets/images/Atelier Metropole MIDI Pack.webp"
+                                        alt="Atelier Metropole"></div>
+                                <div class="mc-info">
+                                    <h3>Atelier Metropole</h3>
+                                    <p class="mc-desc">Anomalie, FKJ style. Sophisticated Neo Soul & Jazz grooves.</p>
+                                    <div class="mc-foot"><span class="mc-price"><span
+                                                style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                            href="#product/midi-bundle" class="btnSmall">View Details</a></div>
+                                </div>
+                            </div>
+                            <!-- Pack 4 -->
+                            <div class="midi-card">
+                                <div class="mc-img"><img src="assets/images/Golden Keys MIDI Pack.webp"
+                                        alt="Golden Keys"></div>
+                                <div class="mc-info">
+                                    <h3>Golden Keys</h3>
+                                    <p class="mc-desc">Adele, Coldplay vibes. Billboard-style Pop & Modern R&B.</p>
+                                    <div class="mc-foot"><span class="mc-price"><span
+                                                style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                            href="#product/midi-bundle" class="btnSmall">View Details</a></div>
+                                </div>
+                            </div>
+                            <!-- Pack 5 -->
+                            <div class="midi-card">
+                                <div class="mc-img"><img src="assets/images/Midnight Noir MIDI Pack.webp"
+                                        alt="Midnight Noir"></div>
+                                <div class="mc-info">
+                                    <h3>Midnight Noir</h3>
+                                    <p class="mc-desc">Trendy R&B/Soul blended with Jazz sophistication.</p>
+                                    <div class="mc-foot"><span class="mc-price"><span
+                                                style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                            href="#product/midi-bundle" class="btnSmall">View Details</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bundle Highlight -->
+                        <div class="midi-bundle reveal"
+                            style="background: #111; border: 1px solid #333; border-radius: 32px; padding: 0; overflow: hidden; display: flex; flex-wrap: wrap;">
+                            <div class="mb-img-wrap" style="flex: 1 1 500px; min-height: 400px; position: relative;">
+                                <img src="assets/images/MIDI Pack Series 1 Bundle.webp" alt="Series 1 Bundle"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="mb-content"
+                                style="flex: 1 1 400px; padding: 60px; display: flex; flex-direction: column; justify-content: center;">
+                                <div class="mb-tag"
+                                    style="background: #fff; color: #000; align-self: flex-start; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 14px; margin-bottom: 24px; text-transform: uppercase;">
+                                    Best Value</div>
+                                <h2 style="font-size: 40px; margin-bottom: 16px; line-height: 1.1;">MIDI Pack Series
+                                    1<br>Bundle Pack</h2>
+                                <p style="color: #aaa; margin-bottom: 32px; font-size: 18px; line-height: 1.6;">
+                                    Get the Complete Collection.<br>
+                                    <span style="color:#fff">Total 1200 files (600 MIDI + 600 Audio)</span>
+                                </p>
+                                <div class="mb-price"
+                                    style="font-size: 36px; font-weight: 800; margin-bottom: 32px; color: #fff;">
+                                    <span
+                                        style="font-size: 22px; color: #666; text-decoration: line-through; margin-right:12px; font-weight: 500;">$400.00</span>$169.00
+                                </div>
+                                <a href="#product/midi-bundle" class="btnWhite"
+                                    onmouseover="this.style.transform='scale(1.02)'"
+                                    onmouseout="this.style.transform='scale(1)'"
+                                    style="align-self: flex-start; padding: 18px 48px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 18px; background: #fff; color: #000; transition: transform 0.2s;">View
+                                    Bundle Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- ARTICLE / ARTIST-->
+            <section class="partners">
+                <div class="wrap reveal">
+                    <h2 class="ptTitle">Trusted by Global Leaders</h2>
+                    <p class="ptDesc">
+                        Powering the sound of Korea's most iconic content.<br>
+                        From blockbuster games to chart-topping K-Pop hits.
+                    </p>
+
+                    <div class="marquee">
+                        <div class="track">
+                            <!-- Set 1 -->
+                            <div class="ptItem">NEXON</div>
+                            <div class="ptItem">KRAFTON</div>
+                            <div class="ptItem">NCSOFT</div>
+                            <div class="ptItem">HYBE</div>
+                            <div class="ptItem">NAVER Z</div>
+                            <div class="ptItem">NETFLIX</div>
+                            <!-- Set 2 -->
+                            <div class="ptItem">NEXON</div>
+                            <div class="ptItem">KRAFTON</div>
+                            <div class="ptItem">NCSOFT</div>
+                            <div class="ptItem">HYBE</div>
+                            <div class="ptItem">NAVER Z</div>
+                            <div class="ptItem">NETFLIX</div>
+                            <!-- Set 3 -->
+                            <div class="ptItem">NEXON</div>
+                            <div class="ptItem">KRAFTON</div>
+                            <div class="ptItem">NCSOFT</div>
+                            <div class="ptItem">HYBE</div>
+                            <div class="ptItem">NAVER Z</div>
+                            <div class="ptItem">NETFLIX</div>
+                            <!-- Set 4 -->
+                            <div class="ptItem">NEXON</div>
+                            <div class="ptItem">KRAFTON</div>
+                            <div class="ptItem">NCSOFT</div>
+                            <div class="ptItem">HYBE</div>
+                            <div class="ptItem">NAVER Z</div>
+                            <div class="ptItem">NETFLIX</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SUPPORT -->
+            <section class="support" id="support">
+                <div class="wrap reveal">
+                    <h2 class="sTitle">Support</h2>
+                    <p class="sDesc">
+                        From installation to license management and technical support.<br>
+                        QLAUDIO is here to ensure your creative flow never stops.
+                    </p>
+
+                    <div class="contactCard">
+                        <div class="cCol">
+                            <div class="cLabel">General Inquiries</div>
+                            <div class="cValue">contact@qlaudio.com</div>
+                        </div>
+                    </div>
+
+
+                    <div class="supportVisual reveal">
+                        <img src="./assets/images/vst/studio_life_dark.webp" alt="Creative Studio">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- VIEW: PRODUCT (Josun Platinum Bundle) -->
+        <div id="view-product" class="view-section" hidden>
+            <!-- PROD HERO -->
+            <!-- PROD HERO (Text Only) -->
+            <section class="prodHero"
+                style="min-height: 60vh; padding-bottom: 0; position: relative; overflow: hidden;">
+                <canvas id="bgCanvas"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; opacity: 0.6;"></canvas>
+                <div class="wrap heroContent"
+                    style="justify-content: center; height: 100%; position: relative; z-index: 2;">
+                    <div class="heroHeader">
+                        <h1 class="ph-title reveal">Josun Series<br>Platinum Bundle</h1>
+                        <h2 class="ph-sub reveal">The Ultimate K-Sound Collection.<br>36 Authentic Instruments.</h2>
+                        <p class="ph-desc reveal">
+                            Experience the breath of a millennium.<br>
+                            The complete collection of Woodwinds, Strings, and Percussions produced using official audio
+                            from the National
+                            Gugak Center.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROD DISPLAY (Image & Purchase) -->
+            <section class="prodDisplay"
+                style="background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000 80%); padding: 60px 0 120px 0;">
+                <div class="wrap"
+                    style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 80px;">
+
+                    <!-- Image -->
+                    <div class="ph-visual reveal" style="margin: 0; max-width: 500px; position: relative;">
+                        <!-- Spotlight effect behind image -->
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80%; height: 80%; background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 70%); z-index: 0; pointer-events: none;">
+                        </div>
+
+                        <img src="https://ecimg.cafe24img.com/pg1160b39285111053/qlaudio/web/product/extra/big/20250503/b5f8776142069849619888da0bffd026.png"
+                            alt="Josun Series Platinum Bundle" class="ph-img"
+                            style="width: 100%; display: block; position: relative; z-index: 1; -webkit-mask-image: radial-gradient(closest-side, black 60%, transparent 100%); mask-image: radial-gradient(closest-side, black 60%, transparent 100%); filter: drop-shadow(0 40px 80px rgba(0,0,0,0.6));">
+                    </div>
+
+                    <!-- Purchase Info -->
+                    <div class="staticCard reveal"
+                        style="background: #111; border: 1px solid #222; padding: 40px; border-radius: 32px; width: 100%; max-width: 380px; text-align: left; box-shadow: 0 20px 40px rgba(0,0,0,0.4); position: relative; z-index: 2;">
+                        <div class="fc-info">
+                            <h3 style="margin: 0 0 8px 0; font-size: 24px; color: #fff;">Josun Platinum Bundle</h3>
+                            <p style="margin: 0 0 24px 0; color: #888;">Full Collection (36 Inst.)</p>
+                            <div class="fc-price"
+                                style="font-size: 40px; font-weight: 800; color: #fff; margin-bottom: 30px;">
+                                $299.00 <span
+                                    style="font-size: 20px; text-decoration: line-through; color: #555; font-weight: 400; margin-left: 10px;">$499.00</span>
+                                <div style="font-size: 16px; color: #FF8A80; font-weight: 700; margin-top: 8px;">Save
+                                    $200.00</div>
+                            </div>
+                        </div>
+                        <a href="https://qlaudio.lemonsqueezy.com/checkout/buy/a7257c37-321b-4935-8815-8afd9b94d15e"
+                            target="_blank"
+                            style="display: block; width: 100%; background: #fff; color: #000; text-align: center; padding: 18px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 18px; transition: transform 0.2s; box-shadow: 0 10px 20px rgba(255,255,255,0.1);"
+                            onmouseover="this.style.transform='scale(1.02)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROD INTRO -->
+            <!-- PROD INTRO (Spitfire Style) -->
+            <!-- PROD INTRO (Premium Light Split Layout) -->
+            <section class="prodIntro reveal"
+                style="background: #fff; padding: 100px 0; position: relative; overflow:hidden;">
+
+                <div class="wrap"
+                    style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; position: relative;">
+                    <!-- LEFT: Story & Description -->
+                    <div class="pi-desc" style="text-align: center;">
+                        <span
+                            style="display: inline-block; padding: 6px 12px; background: #f0f0f0; color: #555; font-size: 12px; font-weight: 700; border-radius: 20px; text-transform: uppercase; margin-bottom: 20px;">The
+                            Flagship Collection</span>
+                        <h2
+                            style="font-size: 48px; font-weight: 800; color: #111; margin-bottom: 30px; line-height: 1.05; letter-spacing: -0.02em;">
+                            The Authentic<br>Voice of Korea
+                        </h2>
+                        <p style="font-size: 18px; line-height: 1.7; color: #444; margin-bottom: 24px;">
+                            Produced using officially created audio from the <strong>National Gugak Center</strong>, the
+                            Josun
+                            Series captures the true essence of Korea's musical soul. Every note has been recorded by
+                            masters of Intangible Cultural Properties.
+                        </p>
+                        <p style="font-size: 16px; line-height: 1.7; color: #666; margin-bottom: 30px;">
+                            This isn't just a sample library; it's a digital preservation of history. Experience 36
+                            authentic instruments meticulously sampled in high fidelity, preserving the breath, texture,
+                            and spirit of a millennium for modern creators.
+                        </p>
+
+                        <!-- Mini Features List -->
+                        <div
+                            style="display: flex; gap: 60px; justify-content: center; margin-top: 40px; border-top: 1px solid #eee; padding-top: 40px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 32px; font-weight: 700; color: #111;">36</div>
+                                <div style="font-size: 13px; color: #888; text-transform: uppercase; margin-top:5px;">
+                                    Instruments</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 32px; font-weight: 700; color: #111;">3</div>
+                                <div style="font-size: 13px; color: #888; text-transform: uppercase; margin-top:5px;">
+                                    Main Categories</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 32px; font-weight: 700; color: #111;">DS</div>
+                                <div style="font-size: 13px; color: #888; text-transform: uppercase; margin-top:5px;">
+                                    Ready</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: Purchase Floating Card -->
+                    <div class="pi-buy"
+                        style="background: #fff; padding: 40px; border-radius: 24px; box-shadow: 0 20px 60px rgba(0,0,0,0.08); border: 1px solid #f0f0f0; position: sticky; top: 120px;">
+                        <div style="font-size: 48px; font-weight: 800; color: #111; margin-bottom: 8px;">
+                            $299.00 <span
+                                style="font-size: 18px; color: #999; font-weight: 400; text-decoration: line-through; margin-left:8px;">$499.00</span>
+                        </div>
+                        <div
+                            style="margin-bottom: 30px; font-size: 14px; color: #E53935; font-weight: 600; background: #FFEBEE; display: inline-block; padding: 4px 10px; border-radius: 4px;">
+                            Save $200.00</div>
+
+                        <a href="https://qlaudio.lemonsqueezy.com/checkout/buy/a7257c37-321b-4935-8815-8afd9b94d15e"
+                            target="_blank"
+                            style="display: block; text-decoration: none; text-align: center; width: 100%; background: #111; color: #fff; font-weight: 600; font-size: 16px; padding: 20px; border: none; border-radius: 12px; cursor: pointer; margin-bottom: 20px; transition: transform 0.2s;"
+                            onmouseover="this.style.transform='scale(1.02)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            Buy Now
+                        </a>
+
+                        <ul style="list-style: none; padding: 0; font-size: 13px; color: #666; line-height: 2.2;">
+                            <li style="border-bottom: 1px dashed #eee;">• Instant Digital Download</li>
+                            <li style="border-bottom: 1px dashed #eee;">• Includes 36 Instruments</li>
+                            <li>• Powered by Free Decent Sampler</li>
+                            <li style="margin-top: 5px;">
+                                <a href="./assets/Manual/Josun%20Series%20Platinum%20Bundle%20Manual%20%26%20EULA.html"
+                                    target="_blank" style="color: inherit; text-decoration: underline;">
+                                    • View Manual & EULA
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FULL VISUAL 1: COLLECTION OVERVIEW -->
+            <section class="full-visual reveal" style="padding: 0 0 100px 0; background: #fff;">
+                <div class="wrap" style="text-align: center; max-width: 1200px; margin: 0 auto;">
+                    <div style="margin-bottom: 40px;">
+                        <h2
+                            style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #111; margin-bottom: 12px;">
+                            The Complete Authentic Collection
+                        </h2>
+                        <p style="font-size: 16px; color: #666; max-width: 600px; margin: 0 auto;">
+                            From the royal courts to the folk villages. Explore the full spectrum of Korean traditional
+                            sound with 36 meticulously sampled instruments.
+                        </p>
+                    </div>
+                    <img src="./assets/images/full_ensemble_1.webp" alt="Josun Series Collection"
+                        style="width: 100%; max-width: 1200px; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.15); display: block; margin: 0 auto;">
+                </div>
+            </section>
+
+            <!-- PROD DETAIL -->
+            <!-- PROD DETAIL: INSTRUMENT LIST -->
+            <section class="prodDetail reveal">
+                <div class="wrap" style="padding: 0 0 80px;">
+                    <!-- AUDIO DEMOS -->
+                    <section class="prodSection audioDemos" style="background: #fff; color: #000; padding: 80px 0;">
+                        <div class="wrap box">
+                            <h2 class="secTitle" style="color:#000; margin-bottom: 40px; text-align: left;">Audio Demos
+                            </h2>
+
+                            <div class="demo-list">
+                                <!-- Track 0 -->
+                                <div class="demo-track" data-src="assets/musics/Gukak 0.mp3">
+                                    <div class="dt-controls">
+                                        <button class="play-btn" aria-label="Play">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>
+                                        <div class="dt-info">
+                                            <span class="dt-title">Josun Series Demo 01</span>
+                                        </div>
+                                        <span class="dt-time">0:00</span>
+                                    </div>
+                                    <canvas class="dt-wave"></canvas>
+                                </div>
+                                <!-- Track 1 -->
+                                <div class="demo-track" data-src="assets/musics/Gukak 1.mp3">
+                                    <div class="dt-controls">
+                                        <button class="play-btn" aria-label="Play">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>
+                                        <div class="dt-info">
+                                            <span class="dt-title">Josun Series Demo 02</span>
+                                        </div>
+                                        <span class="dt-time">0:00</span>
+                                    </div>
+                                    <canvas class="dt-wave"></canvas>
+                                </div>
+                                <!-- Track 2 -->
+                                <div class="demo-track" data-src="assets/musics/Gukak 2.mp3">
+                                    <div class="dt-controls">
+                                        <button class="play-btn" aria-label="Play">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>
+                                        <div class="dt-info">
+                                            <span class="dt-title">Josun Series Demo 03</span>
+                                        </div>
+                                        <span class="dt-time">0:00</span>
+                                    </div>
+                                    <canvas class="dt-wave"></canvas>
+                                </div>
+                                <!-- Track 3 -->
+                                <div class="demo-track" data-src="assets/musics/Gukak 3.mp3">
+                                    <div class="dt-controls">
+                                        <button class="play-btn" aria-label="Play">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>
+                                        <div class="dt-info">
+                                            <span class="dt-title">Josun Series Demo 04</span>
+                                        </div>
+                                        <span class="dt-time">0:00</span>
+                                    </div>
+                                    <canvas class="dt-wave"></canvas>
+                                </div>
+                                <!-- Track 4 -->
+                                <div class="demo-track" data-src="assets/musics/Gukak 4.mp3">
+                                    <div class="dt-controls">
+                                        <button class="play-btn" aria-label="Play">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                            </svg>
+                                        </button>
+                                        <div class="dt-info">
+                                            <span class="dt-title">Josun Series Demo 05</span>
+                                        </div>
+                                        <span class="dt-time">0:00</span>
+                                    </div>
+                                    <canvas class="dt-wave"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- NEW: GUI Showcase in Product Page -->
+                    <div class="josun-gui-section" style="margin: 80px 0 120px 0;">
+                        <div class="gui-intro" style="margin-bottom: 60px; text-align:center;">
+                            <h3 style="font-size: 32px; font-weight: 700; color: #111; margin-bottom: 16px;">Dedicated
+                                Engines</h3>
+                            <p
+                                style="color: #666; font-size: 18px; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+                                Each instrument family comes with its own custom-designed interface,<br>
+                                optimized for authentic performance and control.
+                            </p>
+                        </div>
+
+                        <div class="gui-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                            <!-- Strings -->
+                            <div class="gui-card" style="text-align: left;">
+                                <div class="gui-img-wrap"
+                                    style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); margin-bottom: 24px; transition: transform 0.3s; background: #f5f5f5;"
+                                    onmouseover="this.style.transform='translateY(-10px)'"
+                                    onmouseout="this.style.transform='translateY(0)'">
+                                    <img src="assets/images/StringsGUI.webp" alt="Strings GUI"
+                                        style="width: 100%; display: block;">
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #111;">Strings
+                                </h4>
+                                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                                    Deep resonance of silk strings. Control bending notes (Nonghyeon) and sharp attacks
+                                    with precision.
+                                </p>
+                            </div>
+
+                            <!-- Woodwinds -->
+                            <div class="gui-card" style="text-align: left;">
+                                <div class="gui-img-wrap"
+                                    style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); margin-bottom: 24px; transition: transform 0.3s; background: #f5f5f5;"
+                                    onmouseover="this.style.transform='translateY(-10px)'"
+                                    onmouseout="this.style.transform='translateY(0)'">
+                                    <img src="assets/images/WoodwindsGUI.webp" alt="Woodwinds GUI"
+                                        style="width: 100%; display: block;">
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #111;">
+                                    Woodwinds</h4>
+                                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                                    The breath of nature. Manage expressive vibrato and dynamic airflow for realistic
+                                    solos.
+                                </p>
+                            </div>
+
+                            <!-- Percussion -->
+                            <div class="gui-card" style="text-align: left;">
+                                <div class="gui-img-wrap"
+                                    style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.08); margin-bottom: 24px; transition: transform 0.3s; background: #f5f5f5;"
+                                    onmouseover="this.style.transform='translateY(-10px)'"
+                                    onmouseout="this.style.transform='translateY(0)'">
+                                    <img src="assets/images/PercussionGUI.webp" alt="Percussion GUI"
+                                        style="width: 100%; display: block;">
+                                </div>
+                                <h4 style="font-size: 24px; font-weight: 700; margin-bottom: 12px; color: #111;">
+                                    Percussion</h4>
+                                <p style="color: #666; font-size: 16px; line-height: 1.6;">
+                                    The heartbeat of tradition. Extensive velocity layers and round-robins for ultimate
+                                    realism.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="secTitle center" style="text-align:center; margin-bottom: 60px;">Included Instruments
+                    </h2>
+
+                    <!-- Strings -->
+                    <div class="inst-category">
+                        <div class="cat-header">
+                            <h3 class="cat-title">Strings (10)</h3>
+                            <p class="cat-desc">Deep, resonant bowed and plucked zithers. <br>From court majesty to folk
+                                improvisation.</p>
+                        </div>
+
+                        <div class="inst-visual">
+                            <img class="slide-img" src="./assets/images/gal_str_1.webp" alt="Gayageum">
+                            <img class="slide-img" src="./assets/images/gal_str_2.webp" alt="Geomungo">
+                            <img class="slide-img" src="./assets/images/gal_str_3.webp" alt="Haegeum">
+                        </div>
+
+                        <div class="inst-grid">
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Ajaeng (Jeongak)</strong>
+                                    <span class="inst-desc">A large bowed zither with a deep, rich tone comparable to a
+                                        cello. Used primarily in court music, it plays the fundamental bass lines of
+                                        traditional ensembles with a resonant, earthy character.</span>
+                                </li>
+                                <li>
+                                    <strong>Ajaeng (Sanjo)</strong>
+                                    <span class="inst-desc">Smaller and more agile than the Jeongak version, the Sanjo
+                                        Ajaeng offers cello-like expressiveness with faster articulation, perfect for
+                                        virtuosic solo performances and improvisation.</span>
+                                </li>
+                                <li>
+                                    <strong>Gayageum (25-String)</strong>
+                                    <span class="inst-desc">A modern adaptation of the traditional zither, featuring 25
+                                        strings for a wider range and complex harmonies. It delivers a rich, harp-like
+                                        tone suitable for both traditional and fusion genres.</span>
+                                </li>
+                            </ul>
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Gayageum (Jeongak)</strong>
+                                    <span class="inst-desc">The original 12-string zither for court music. Known for its
+                                        clear, elegant, and refined tone, it utilizes restrained playing techniques to
+                                        emphasize grace and subtlety.</span>
+                                </li>
+                                <li>
+                                    <strong>Gayageum (Sanjo)</strong>
+                                    <span class="inst-desc">Designed for folk music, this 12-string zither has a
+                                        punchier, more expressive tone than the Jeongak version. It allows for dynamic
+                                        bending and wide vibrato, essential for emotional solo play.</span>
+                                </li>
+                                <li>
+                                    <strong>Geomungo</strong>
+                                    <span class="inst-desc">A representative 6-string zither played with a bamboo stick
+                                        (Suldae). With a deep, percussive sound similar to a double bass, it provides
+                                        strong rhythmic and harmonic foundations.</span>
+                                </li>
+                                <li>
+                                    <strong>Geum</strong>
+                                    <span class="inst-desc">A rare 7-string zither with a soft, elegant tone. Similar to
+                                        the Gayageum but known for its even more refined sound, used exclusively in
+                                        ancient court and ritual music.</span>
+                                </li>
+                            </ul>
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Haegeum</strong>
+                                    <span class="inst-desc">A 2-string fiddle held vertically. Its unique, nasal tone is
+                                        incredibly expressive, capable of mimicking the human voice. Versatile enough
+                                        for everything from court music to modern pop.</span>
+                                </li>
+                                <li>
+                                    <strong>Yanggeum</strong>
+                                    <span class="inst-desc">A hammered dulcimer with metal strings, played with bamboo
+                                        sticks. It adds a bright, clear, and celesta-like resonance to ensembles,
+                                        offering distinct, sparkly textures.</span>
+                                </li>
+                                <li>
+                                    <strong>Seul</strong>
+                                    <span class="inst-desc">A classical zither with many strings, producing a clear and
+                                        peaceful sound. Requires highly delicate technique, evoking a serene and
+                                        meditative atmosphere.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Woodwind -->
+                    <div class="inst-category">
+                        <div class="cat-header">
+                            <h3 class="cat-title">Woodwinds (18)</h3>
+                            <p class="cat-desc">The breath of Korea. <br>Clear bamboo flutes, piercing reeds, and
+                                meditative
+                                clay vessels.</p>
+                        </div>
+
+                        <div class="inst-visual">
+                            <img class="slide-img" src="./assets/images/gal_wnd_1.webp" alt="Sogeum">
+                            <img class="slide-img" src="./assets/images/gal_wnd_2.webp" alt="Taepyeongso">
+                            <img class="slide-img" src="./assets/images/gal_wnd_3.webp" alt="Saenghwang">
+                        </div>
+
+                        <div class="inst-grid">
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Danso</strong>
+                                    <span class="inst-desc">A small notched bamboo flute. Its pure, clear tone is
+                                        similar to a recorder but with a distinct Korean timbre. Known for its soothing
+                                        sound in solo and ensemble settings.</span>
+                                </li>
+                                <li>
+                                    <strong>Daegeum (Jeongak)</strong>
+                                    <span class="inst-desc">The largest traditional transverse bamboo flute. It produces
+                                        a deep, rich, and buzzing timbre due to a special membrane (Cheong). Ideal for
+                                        solemn court music.</span>
+                                </li>
+                                <li>
+                                    <strong>Daegeum (Sanjo)</strong>
+                                    <span class="inst-desc">Smaller and more agile than the Jeongak Daegeum, with a
+                                        higher pitch and piercing tone. Essential for the expressive, improvisational
+                                        Sanjo genre.</span>
+                                </li>
+                                <li>
+                                    <strong>Sogeum</strong>
+                                    <span class="inst-desc">A small transverse bamboo flute producing a high, clear, and
+                                        bright tone. It adds a light, airy texture to ensembles, similar to a piccolo
+                                        but with an organic warmth.</span>
+                                </li>
+                                <li>
+                                    <strong>Tungso</strong>
+                                    <span class="inst-desc">A vertical bamboo flute similar to the Tungso but used in
+                                        specific Confucian ritual music. It has a solemn, understated character.</span>
+                                </li>
+                                <li>
+                                    <strong>Hoon</strong>
+                                    <span class="inst-desc">A globular clay flute (ocarina-like) with a soft, warm, and
+                                        earthy tone. Its mysterious and breathy sound is perfect for meditative and
+                                        quiet passages.</span>
+                                </li>
+                            </ul>
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Piri (Hyang)</strong>
+                                    <span class="inst-desc">The standard Korean bamboo oboe. It has a warm, mellow tone
+                                        similar to a clarinet, widely used in both court and folk music for leading
+                                        melodies.</span>
+                                </li>
+                                <li>
+                                    <strong>Piri (Dang)</strong>
+                                    <span class="inst-desc">A cylindrical double-reed oboe with a loud, distinct, and
+                                        penetrating tone. Originally from Tang China, it plays a key role in loud
+                                        ensemble pieces.</span>
+                                </li>
+                                <li>
+                                    <strong>Piri (Se)</strong>
+                                    <span class="inst-desc">The smallest Piri with a delicate, soft volume. Used in
+                                        chamber music or to accompany vocals where a gentle tone is required.</span>
+                                </li>
+                                <li>
+                                    <strong>Daepiri</strong>
+                                    <span class="inst-desc">A modernized low-register Piri with a deep, resonant sound
+                                        similar to a saxophone. It bridges traditional timbre with modern lower-range
+                                        requirements.</span>
+                                </li>
+                                <li>
+                                    <strong>Taepyeongso</strong>
+                                    <span class="inst-desc">A loud, conical double-reed instrument with a metal bell.
+                                        Its piercing, trumpet-like sound makes it the star of outdoor ceremonial and
+                                        marching music.</span>
+                                </li>
+                                <li>
+                                    <strong>Saenghwang</strong>
+                                    <span class="inst-desc">A mouth organ with 17 bamboo pipes. Capable of playing
+                                        chords and melodies simultaneously, producing a mystical, harmonic sound similar
+                                        to a pipe organ or harmonica.</span>
+                                </li>
+                            </ul>
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>So</strong>
+                                    <span class="inst-desc">A panpipe-like instrument used in court music. It produces a
+                                        clean, refined sound, contributing to the graceful atmosphere of royal
+                                        ceremonies.</span>
+                                </li>
+                                <li>
+                                    <strong>Yak</strong>
+                                    <span class="inst-desc">A small notched flute with three holes, used in court
+                                        ceremonial dances. It produces a simple, bright tone.</span>
+                                </li>
+                                <li>
+                                    <strong>Jeok</strong>
+                                    <span class="inst-desc">A vertical flute similar to the Danso but used in specific
+                                        Confucian ritual music. It has a solemn, understated character.</span>
+                                </li>
+                                <li>
+                                    <strong>Ji</strong>
+                                    <span class="inst-desc">A transverse bamboo flute with a protruding blowhole, used
+                                        exclusively in specialized court playing alongside the Hun.</span>
+                                </li>
+                                <li>
+                                    <strong>Nabal & Nagak</strong>
+                                    <span class="inst-desc">Nabal (Brass Horn) and Nagak (Conch Shell) are single-note
+                                        heraldic instruments used in military processions (Daechwita) to create a grand,
+                                        imposing atmosphere.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Percussion -->
+                    <div class="inst-category">
+                        <div class="cat-header">
+                            <h3 class="cat-title">Percussion (8+)</h3>
+                            <p class="cat-desc">The heartbeat of tradition. <br>From massive temple bells to energetic
+                                folk rhythms.</p>
+                        </div>
+
+                        <div class="inst-visual perc-visual">
+                            <img class="slide-img" src="./assets/images/gal_prc_1.webp" alt="Janggu">
+                            <img class="slide-img" src="./assets/images/gal_prc_2.webp" alt="Buk">
+                            <img class="slide-img" src="./assets/images/gal_prc_3.webp" alt="Jing">
+                            <img class="slide-img" src="./assets/images/gal_prc_4.webp" alt="Nagak">
+                        </div>
+
+                        <div class="inst-grid">
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Banghyang</strong>
+                                    <span class="inst-desc">A melodious percussion instrument consisting of iron slabs
+                                        struck with a mallet. Similar to a glockenspiel, it produces clear, bright,
+                                        bell-like tones for court and ritual music.</span>
+                                </li>
+                                <li>
+                                    <strong>Pyeonggyeong</strong>
+                                    <span class="inst-desc">An ancient lithophone made of L-shaped stone chimes. Struck
+                                        with a mallet, it produces a pure, earthy, and resonant sound, perfect for
+                                        meditative and serene atmospheres.</span>
+                                </li>
+                                <li>
+                                    <strong>Pyeonjong</strong>
+                                    <span class="inst-desc">A set of tuned bronze bells hung in a frame. Struck with a
+                                        mallet, they create deep, rich, and majestic resonances, adding grandeur to
+                                        royal court ceremonies.</span>
+                                </li>
+                            </ul>
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Samulnori Set</strong>
+                                    <span class="inst-desc">The four core percussion instruments of Korean folk music:
+                                        Kkwaenggwari (small gong), Jing (large gong), Janggu (hourglass drum), and Buk
+                                        (barrel drum). Together, they create dynamic, powerful rhythms.</span>
+                                </li>
+                                <li>
+                                    <strong>Jangdan Set</strong>
+                                    <span class="inst-desc">Specialized hit collection for traditional rhythmic
+                                        patterns. Includes Sori-buk and Jangdan-janggu, providing the solid rhythmic
+                                        foundation essential for Pansori and dance.</span>
+                                </li>
+                            </ul>
+                            <ul class="inst-list">
+                                <li>
+                                    <strong>Cinematic Percussion</strong>
+                                    <span class="inst-desc">A massive collection of 17 distinct percussion kits designed
+                                        for epic scoring. Includes huge drums like Geongo and Yonggo, as well as unique
+                                        textures like the tiger-scraper (Eo) and wooden clappers (Bak).</span>
+                                </li>
+                                <li>
+                                    <strong>Temple & Ritual</strong>
+                                    <span class="inst-desc">Spiritual sounds for meditation and scoring. Features the
+                                        deep Temple Bell (Beopjong), Moktak (wooden fish), and various shamanic bells
+                                        and cymbals for a cleansing, mystical atmosphere.</span>
+                                </li>
+                            </ul>
+                        </div>
+            </section>
+
+            <!-- FULL VISUAL 2: STUDIO DETAIL -->
+            <section class="full-visual reveal" style="padding: 100px 0; background: #0a0a0a; color: #fff;">
+                <div class="wrap" style="text-align: center; max-width: 1200px; margin: 0 auto;">
+                    <div style="margin-bottom: 40px;">
+                        <h2
+                            style="font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: #fff; margin-bottom: 12px;">
+                            Capturing the Soul of Heritage
+                        </h2>
+                        <p style="font-size: 16px; color: #aaa; max-width: 600px; margin: 0 auto;">
+                            Recorded in high fidelity at the National Gugak Center. Experience the authentic textures,
+                            breath, and resonance of Korea's musical legacy.
+                        </p>
+                    </div>
+                    <img src="./assets/images/full_ensemble_2.webp" alt="Josun Series Instruments Detail"
+                        style="width: 100%; max-width: 1200px; border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); display: block; margin: 0 auto;">
+                </div>
+            </section>
+
+
+            <!-- TESTIMONIALS SECTION -->
+            <section class="prodReviews reveal"
+                style="background: #f4f4f4; padding: 100px 0; border-top: 1px solid #eee;">
+                <div class="wrap">
+                    <div class="review-header" style="text-align: center; margin-bottom: 60px;">
+                        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 16px; color: #111;">Loved by
+                            Composers</h2>
+                        <div style="color: #FFB400; font-size: 24px;">★★★★★</div>
+                    </div>
+
+                    <div class="review-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                        <!-- Review 1 -->
+                        <div class="review-card"
+                            style="background:#fff; padding:40px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                            <div class="quote-mark"
+                                style="font-size:60px; color:#ddd; font-family:serif; line-height:0.5; margin-bottom:20px;">
+                                “</div>
+                            <p
+                                style="font-size:16px; line-height:1.7; color:#555; margin-bottom:24px; font-style:italic;">
+                                Finally, a library that captures the true soul of Korea. The authenticity of the
+                                Gayageum and Haegeum is unmatched. This is hands down the best Korean virtual instrument
+                                I've ever used.
+                            </p>
+                            <div class="reviewer">
+                                <strong style="display:block; color:#111; font-size:16px;">James Park</strong>
+                                <span style="font-size:13px; color:#888;">Lead Game Composer</span>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="review-card"
+                            style="background:#fff; padding:40px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                            <div class="quote-mark"
+                                style="font-size:60px; color:#ddd; font-family:serif; line-height:0.5; margin-bottom:20px;">
+                                “</div>
+                            <p
+                                style="font-size:16px; line-height:1.7; color:#555; margin-bottom:24px; font-style:italic;">
+                                The textures are incredibly detailed. The percussion set alone is worth the price. It
+                                sits perfectly in my orchestral trailer mixes without needing any heavy EQ.
+                            </p>
+                            <div class="reviewer">
+                                <strong style="display:block; color:#111; font-size:16px;">Sarah Jenkins</strong>
+                                <span style="font-size:13px; color:#888;">Film Score Composer</span>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="review-card"
+                            style="background:#fff; padding:40px; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                            <div class="quote-mark"
+                                style="font-size:60px; color:#ddd; font-family:serif; line-height:0.5; margin-bottom:20px;">
+                                “</div>
+                            <p
+                                style="font-size:16px; line-height:1.7; color:#555; margin-bottom:24px; font-style:italic;">
+                                A must-have for ethnic textures. The 'Temple & Ritual' sounds bring instant atmosphere
+                                to my scenes. It's rare to find such high-quality samples that truly meet the
+                                <strong>Professional Standard</strong>.
+                            </p>
+                            <div class="reviewer">
+                                <strong style="display:block; color:#111; font-size:16px;">David Chen</strong>
+                                <span style="font-size:13px; color:#888;">Sound Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FEATURES GRID (Dark Theme) -->
+            <section class="prodFeatures reveal" style="background: #0a0a0a; padding: 120px 0; color: #fff;">
+                <div class="wrap">
+                    <div class="pf-header" style="text-align: center; margin-bottom: 80px;">
+                        <span
+                            style="color: #888; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; font-size: 14px; display: block; margin-bottom: 20px; text-align: center;">Technical
+                            Specifications</span>
+                        <h2
+                            style="font-size: 48px; font-weight: 800; margin-bottom: 24px; line-height: 1.1; text-align: center;">
+                            Advanced
+                            Control for<br>Modern Production</h2>
+                        <p
+                            style="font-size: 18px; color: #aaa; max-width: 600px; margin: 0 auto; line-height: 1.7; text-align: center;">
+                            Authentic sounds meet modern workflow.<br>
+                            Fully compatible with the free Decent Sampler platform.
+                        </p>
+                    </div>
+
+                    <div class="pf-grid display-grid" style="grid-template-columns: repeat(2, 1fr); gap: 30px;">
+                        <!-- Card 1: Engine -->
+                        <div class="feat-card">
+                            <div class="feat-icon">🎹</div>
+                            <h3 class="feat-title">Decent Sampler Engine</h3>
+                            <p class="feat-desc">
+                                Cross-platform compatibility (Windows, Mac, Linux, iOS). Runs as VST, VST3, AU, AAX, or
+                                Standalone. No expensive player required.
+                            </p>
+                        </div>
+
+                        <!-- Card 2: Key Switches -->
+                        <div class="feat-card">
+                            <div class="feat-icon">🎛️</div>
+                            <h3 class="feat-title">Key Switching & Articulations</h3>
+                            <p class="feat-desc">
+                                Access vibrato, bending, glissando, and ornaments instantly using low-octave key
+                                switches.
+                            </p>
+                        </div>
+
+                        <!-- Card 3: Acoustics -->
+                        <div class="feat-card">
+                            <div class="feat-icon">🏛️</div>
+                            <h3 class="feat-title">Customizable Acoustics</h3>
+                            <p class="feat-desc">
+                                Choose from 9 Reverb types including Cathedral, Chamber, and Plate to place instruments
+                                in any space.
+                            </p>
+                        </div>
+
+                        <!-- Card 4: Dynamics -->
+                        <div class="feat-card">
+                            <div class="feat-icon">🎚️</div>
+                            <h3 class="feat-title">Dynamic Expression</h3>
+                            <p class="feat-desc">
+                                Map Mod Wheel (CC#1) to dynamics for expressive performances. Adjust Tone, Density, and
+                                Bottom to sculpt your sound.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- PROD BONUS: PHRASE EXPANSION (Fixed Layout) -->
+            <section class="bonus-section reveal"
+                style="padding: 100px 0; background: #101419; color: #fff; position: relative; overflow: hidden;">
+                <!-- Decorative background glow -->
+                <div
+                    style="position: absolute; top: -50%; right: -20%; width: 800px; height: 800px; background: radial-gradient(circle, rgba(191,155,48,0.08) 0%, transparent 70%); pointer-events: none;">
+                </div>
+
+                <div class="wrap bonus-wrap" style="position: relative; z-index: 2;">
+
+                    <!-- Left: Text Content -->
+                    <div class="bonus-text">
+                        <span
+                            style="display:inline-block; padding: 6px 12px; background: #BF9B30; color: #000; font-weight: 700; font-size: 13px; border-radius: 4px; margin-bottom: 24px;">BONUS
+                            INCLUDED</span>
+
+                        <h3
+                            style="font-size:42px; font-weight: 800; margin-bottom: 24px; font-family: 'Playfair Display', serif; line-height: 1.1; color: #fff;">
+                            Phrase Expansion<br>Library
+                        </h3>
+
+                        <p style="font-size: 16px; color: #ccc; line-height: 1.7; margin-bottom: 40px;">
+                            A comprehensive collection of authentic performance phrases.<br>
+                            Includes intricate rhythms (Jangdan) and melodic runs that are nearly impossible to program
+                            manually.<br>
+                            From Shamanic Rituals to Royal Court Music, get instant authenticity.
+                        </p>
+
+                        <div class="bonus-benefits" style="display: grid; gap: 16px;">
+                            <div class="benefit-item" style="display: flex; align-items: center; gap: 16px;">
+                                <div
+                                    style="width: 32px; height: 32px; background: rgba(191,155,48,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #BF9B30; font-weight: bold; font-size:14px;">
+                                    ✓</div>
+                                <span style="font-size: 15px; color: #ddd;">Drag & Drop into your DAW</span>
+                            </div>
+                            <div class="benefit-item" style="display: flex; align-items: center; gap: 16px;">
+                                <div
+                                    style="width: 32px; height: 32px; background: rgba(191,155,48,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #BF9B30; font-weight: bold; font-size:14px;">
+                                    ✓</div>
+                                <span style="font-size: 15px; color: #ddd;">Natural Free-Rhythm (Non-Quantized)</span>
+                            </div>
+                            <div class="benefit-item" style="display: flex; align-items: center; gap: 16px;">
+                                <div
+                                    style="width: 32px; height: 32px; background: rgba(191,155,48,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #BF9B30; font-weight: bold; font-size:14px;">
+                                    ✓</div>
+                                <span style="font-size: 15px; color: #ddd;">Over 18GB+ Audo Files</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Visual Cards (Grid) -->
+                    <div class="bonus-cards">
+
+                        <!-- Solo & Improvisation -->
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">🎻</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Sanjo</h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Virtuosic scattered melodies</p>
+                        </div>
+
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">🔮</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Sinawi</h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Shamanic ensemble improvisation</p>
+                        </div>
+
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">🎤</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Pansori</h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Epic storytelling accompaniment</p>
+                        </div>
+
+                        <!-- Ritual & Court -->
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">👹</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Muak</h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Spiritual ritual music (Gut)</p>
+                        </div>
+
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">👑</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Jeongak</h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Elegant royal court music</p>
+                        </div>
+
+                        <!-- Folk & Military -->
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">⚡</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Samulnori
+                            </h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Dynamic percussion quartet</p>
+                        </div>
+
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">🌾</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Minyo</h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Regional folk songs</p>
+                        </div>
+
+                        <div class="bonus-card"
+                            style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); padding: 24px; border-radius: 16px; backdrop-filter: blur(10px);">
+                            <div style="font-size: 28px; margin-bottom:12px;">🎺</div>
+                            <h4 style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom:4px;">Daechwita
+                            </h4>
+                            <p style="font-size: 13px; color: #aaa; margin: 0;">Grand marching music</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PHRASE LIBRARY GUIDE SECTION -->
+            <section class="phraseGuide reveal"
+                style="background: #fff; padding: 100px 0; border-top: 1px solid #eee; color: #333;">
+                <div class="wrap">
+                    <div class="pg-header" style="text-align: center; margin-bottom: 60px;">
+                        <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 16px;">Phrase Expansion Guide</h2>
+                        <p style="font-size: 16px; color: #666; max-width: 700px; margin: 0 auto;">
+                            A comprehensive guide to the Josun Series Phrase Expansion library.<br>
+                            Navigate centuries of musical tradition with these essential notes.
+                        </p>
+                    </div>
+
+                    <div class="pg-content" style="max-width: 900px; margin: 0 auto;">
+
+                        <!-- 1. Getting Started (Accordion) -->
+                        <details class="pg-accordion"
+                            style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 12px; overflow: hidden;">
+                            <summary
+                                style="padding: 24px; background: #f9f9f9; font-weight: 700; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+                                <span>📚 Important Usage Guidelines</span>
+                                <span style="font-size: 20px;">+</span>
+                            </summary>
+                            <div class="pg-body" style="padding: 30px; line-height: 1.7; background: #fff;">
+                                <h4 style="margin-bottom: 12px;">Welcome</h4>
+                                <p style="margin-bottom: 24px;">Welcome to the Josun Series Phrase Expansion. This
+                                    library is a comprehensive collection of authentic performance phrases spanning
+                                    centuries of tradition. It may contain concepts unfamiliar to those outside Korean
+                                    traditional music.</p>
+
+                                <h4 style="margin-bottom: 12px;">On Tempo (BPM) and Meter</h4>
+                                <p style="margin-bottom: 24px;">Korean traditional music features a fluid tempo and
+                                    complex time signatures (e.g., 10/8) that change dynamically. Most files do not have
+                                    a specified BPM.</p>
+
+                                <h4 style="margin-bottom: 12px;">Tuning and Pitch</h4>
+                                <p style="margin-bottom: 24px;">Traditional instruments follow the
+                                    <em>Sam-bun-son-ik-beop</em> tuning system, not Western equal temperament. We
+                                    recommend using tools like Melodyne or Auto-Tune for integration into modern
+                                    productions.
+                                </p>
+
+                                <h4 style="margin-bottom: 12px;">File Naming Conventions</h4>
+                                <p style="margin-bottom: 24px;">File names serve as genre or rhythm indicators (e.g.,
+                                    'Pansori' implies phrases from that genre, not vocals). We adhere to National Gukak
+                                    Center naming standards.</p>
+
+                                <h4 style="margin-bottom: 12px;">Arrangement</h4>
+                                <p style="margin-bottom: 0;">Phrases are organized alphabetically by rhythm (Jangdan)
+                                    for production convenience, rather than adhering to traditional song structures.</p>
+                            </div>
+                        </details>
+
+                        <!-- 2. Detailed Instrument Guide (Accordion) -->
+                        <details class="pg-accordion"
+                            style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 12px; overflow: hidden;">
+                            <summary
+                                style="padding: 24px; background: #f9f9f9; font-weight: 700; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+                                <span>🥁 Percussion Guide</span>
+                                <span style="font-size: 20px;">+</span>
+                            </summary>
+                            <div class="pg-body" style="padding: 30px; line-height: 1.7; background: #fff;">
+                                <ul class="pg-list" style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Bara (Cymbals)</strong><br>
+                                        Large brass cymbals for court and ritual music. Powerful, crashing sound.
+                                        <div style="font-size: 14px; color: #666; margin-top: 8px;">• Muak: Used in
+                                            village rituals (Gut) for spiritual intensity.</div>
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Buk (Barrel Drum)</strong><br>
+                                        Provides rhythmic foundation.
+                                        <div style="font-size: 14px; color: #666; margin-top: 8px;">
+                                            • Muak: Driving rhythms for shamanism.<br>
+                                            • Pansori: Essential beat and sound effects for storytelling.<br>
+                                            • Samulnori: Represents 'earth', providing a solid beat.
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Janggu (Hourglass Drum)</strong><br>
+                                        The most versatile drum with two distinct tones.
+                                        <div style="font-size: 14px; color: #666; margin-top: 8px;">
+                                            • Jeongak: Graceful core patterns.<br>
+                                            • Muak: Intricate rhythms for ritual dance.<br>
+                                            • Samulnori: Represents 'rain', playing joyful rhythms.
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Jing (Large Gong)</strong><br>
+                                        Deep, resonant gong marking the downbeat. Represents 'wind' in Samulnori.
+                                    </li>
+                                    <li style="margin-bottom: 0;">
+                                        <strong>Kkwaenggwari (Small Gong)</strong><br>
+                                        High-pitched leader of the ensemble. Represents 'lightning' with virtuosic
+                                        patterns.
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="pg-accordion"
+                            style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 12px; overflow: hidden;">
+                            <summary
+                                style="padding: 24px; background: #f9f9f9; font-weight: 700; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+                                <span>🎻 Strings Guide</span>
+                                <span style="font-size: 20px;">+</span>
+                            </summary>
+                            <div class="pg-body" style="padding: 30px; line-height: 1.7; background: #fff;">
+                                <ul class="pg-list" style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Ajaeng (Bowed Zither)</strong><br>
+                                        Raspy, deep, cello-like tone.
+                                        <div style="font-size: 14px; color: #666; margin-top: 8px;">
+                                            • Sanjo: Dramatic and sorrowful solos.<br>
+                                            • Minyo: Adds deep emotional character to folk songs.
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Gayageum (Plucked Zither)</strong><br>
+                                        Clear, graceful, and delicate.
+                                        <div style="font-size: 14px; color: #666; margin-top: 8px;">
+                                            • Sanjo: Virtuosic solos spanning slow to fast tempos.<br>
+                                            • Minyo: Accompanies folk songs from all major regions.
+                                        </div>
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Geomungo (Plucked Zither)</strong><br>
+                                        The 'scholar's instrument'. Percussive, deep, masculine tone played with a
+                                        stick.
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Haegeum (Two-Stringed Fiddle)</strong><br>
+                                        Uniquely expressive, human-like voice. Essential in almost every genre from
+                                        court to folk.
+                                    </li>
+                                    <li>
+                                        <strong>Yanggeum (Dulcimer)</strong><br>
+                                        Metal strings struck with bamboo. Adds bright, crystalline texture.
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="pg-accordion"
+                            style="margin-bottom: 20px; border: 1px solid #eee; border-radius: 12px; overflow: hidden;">
+                            <summary
+                                style="padding: 24px; background: #f9f9f9; font-weight: 700; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+                                <span>🎋 Woodwinds Guide</span>
+                                <span style="font-size: 20px;">+</span>
+                            </summary>
+                            <div class="pg-body" style="padding: 30px; line-height: 1.7; background: #fff;">
+                                <ul class="pg-list" style="list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Daegeum (Large Bamboo Flute)</strong><br>
+                                        Resonant, buzzing timbre. Highly expressive for both court music and Sanjo
+                                        solos.
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Piri (Cylindrical Oboe)</strong><br>
+                                        Loud, piercing double-reed instrument. Often carries the main melody in
+                                        ensembles.
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Taepyeongso (Conical Oboe)</strong><br>
+                                        Brilliant, trumpet-like sound. The star of outdoor marching music (Daechwita).
+                                    </li>
+                                    <li style="margin-bottom: 30px;">
+                                        <strong>Danso (Vertical Flute)</strong><br>
+                                        Pure, tranquil tone. Known for duet performances and folk accompaniment.
+                                    </li>
+                                    <li>
+                                        <strong>Sogeum (Small Flute)</strong><br>
+                                        High-pitched and bright. Often doubles the melody an octave higher.
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <div style="text-align: center; margin-top: 40px; font-size: 13px; color: #999;">
+                            License: Samples recorded by the National Gukak Center. Available for music creation use.
+                            <br>
+                            Unauthorized redistribution is prohibited.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ SECTION (Specific to Platinum Bundle) -->
+            <section class="prodFAQ" style="padding: 100px 0; background: #fff;">
+                <div class="wrap">
+                    <h2 style="font-size: 36px; font-weight: 800; margin-bottom: 60px; text-align: center;">Frequently
+                        Asked Questions</h2>
+                    <div class="faq-section" style="max-width: 800px; margin: 0 auto;">
+
+                        <details class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <summary
+                                style="font-weight: 700; cursor: pointer; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                                <span>How do I download the library?</span>
+                                <span style="font-size: 24px;">+</span>
+                            </summary>
+                            <div class="faq-content" style="color: #666; padding-top: 16px; line-height: 1.6;">
+                                You can access your downloads via the <strong>My Order</strong> link in the top right
+                                menu, or by visiting <a href="https://app.lemonsqueezy.com/my-orders" target="_blank"
+                                    style="text-decoration: underline; color: inherit;">https://app.lemonsqueezy.com/my-orders</a>.
+                                Simply enter your email address to verify your identity, and you will be able to
+                                download your purchased files.
+                            </div>
+                        </details>
+
+                        <details class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <summary
+                                style="font-weight: 700; cursor: pointer; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                                <span>How do I install Decent Sampler?</span>
+                                <span style="font-size: 24px;">+</span>
+                            </summary>
+                            <div class="faq-content" style="color: #666; padding-top: 16px; line-height: 1.6;">
+                                This library is powered by the free <strong>Decent Sampler</strong> engine. Please
+                                download the player from <a
+                                    href="https://www.decentsamples.com/product/decent-sampler-plugin/" target="_blank"
+                                    style="text-decoration: underline; color: inherit;">decentsamples.com</a> and
+                                install the version appropriate for your operating system (Windows, Mac, Linux, or iOS).
+                            </div>
+                        </details>
+
+                        <details class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <summary
+                                style="font-weight: 700; cursor: pointer; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                                <span>How do I load the library?</span>
+                                <span style="font-size: 24px;">+</span>
+                            </summary>
+                            <div class="faq-content" style="color: #666; padding-top: 16px; line-height: 1.6;">
+                                1. Open Decent Sampler in your DAW or as a standalone app.<br>
+                                2. Click <strong>FILE &gt; Load...</strong> in the top menu.<br>
+                                3. Select the <strong>.dslibrary</strong> or <strong>.dspreset</strong> file you
+                                extracted.<br>
+                                (You can also simply drag and drop the file into the plugin interface.)
+                            </div>
+                        </details>
+
+                        <details class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <summary
+                                style="font-weight: 700; cursor: pointer; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                                <span>Can I use these sounds in commercial projects?</span>
+                                <span style="font-size: 24px;">+</span>
+                            </summary>
+                            <div class="faq-content" style="color: #666; padding-top: 16px; line-height: 1.6;">
+                                Yes! All QLAUDIO libraries are <strong>100% royalty-free</strong>. Once purchased, you
+                                can use them in movies, games, music, advertisements, and other commercial media without
+                                paying any additional fees. Only ensuring you don't resell the raw samples themselves.
+                            </div>
+                        </details>
+
+                        <details class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <summary
+                                style="font-weight: 700; cursor: pointer; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                                <span>Do I need Kontakt to use this?</span>
+                                <span style="font-size: 24px;">+</span>
+                            </summary>
+                            <div class="faq-content" style="color: #666; padding-top: 16px; line-height: 1.6;">
+                                No, our plugins are <strong>Standalone VST3/AU/AAX instruments</strong> (via Decent
+                                Sampler). You do NOT need Native Instruments Kontakt. They work directly in your DAW.
+                            </div>
+                        </details>
+
+                        <details class="faq-item" style="border-bottom: 1px solid #eee; padding: 20px 0;">
+                            <summary
+                                style="font-weight: 700; cursor: pointer; font-size: 18px; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                                <span>What are the system requirements?</span>
+                                <span style="font-size: 24px;">+</span>
+                            </summary>
+                            <div class="faq-content" style="color: #666; padding-top: 16px; line-height: 1.6;">
+                                Mac: macOS 10.13 or higher (Intel & Apple Silicon Native).<br>
+                                Windows: Windows 10 or higher (64-bit).<br>
+                                RAM: 8GB minimum (16GB recommended).<br>
+                                Disk Space: 20GB SSD space recommended for the Platinum Bundle.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <!-- BOTTOM BANNER -->
+                <section class="prodBottom reveal">
+                    <div class="wrap">
+                        <div class="pb-content"
+                            style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 60px; text-align: left; padding: 80px;">
+                            <div style="flex: 1; min-width: 300px; max-width: 500px;">
+                                <img src="./assets/images/Josun Seires Platinum Bundle.webp"
+                                    alt="Josun Series Platinum Bundle"
+                                    style="width: 100%; height: auto; display: block; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));">
+                            </div>
+                            <div style="flex: 1; min-width: 300px;">
+                                <div class="pb-tag" style="margin: 0 0 16px 0;">Get Started</div>
+                                <h2 style="margin: 0 0 24px 0; font-size: 48px; line-height: 1.1;">The
+                                    Complete<br>Korean Sound Palette</h2>
+                                <p style="margin: 0 0 40px 0; font-size: 18px; color: #666;">36 Instruments. Infinite
+                                    Inspiration. One Bundle.</p>
+                                <a href="https://qlaudio.lemonsqueezy.com/checkout/buy/a7257c37-321b-4935-8815-8afd9b94d15e"
+                                    class="btnBlack lemonsqueezy-button" style="text-decoration: none;">Buy Now -
+                                    $299.00
+                                    <span
+                                        style="text-decoration: line-through; opacity: 0.5; margin-left: 6px; font-weight: 400;">$499.00</span>
+                                    <span style="color:#FF8A80; font-size:14px; margin-left:10px;">(Save
+                                        $200.00)</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        </div>
+
+        <!-- VIEW: PLUGINS (Coming Soon) -->
+        <div id="view-plugins" class="view-section" hidden style="position: relative;">
+            <canvas id="pluginCanvas"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100vh; z-index: 0; pointer-events: none; background: #000;"></canvas>
+            <section
+                style="min-height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 100px; position: relative; z-index: 1;">
+                <div class="reveal">
+                    <h1
+                        style="font-size: 4rem; font-weight: 700; margin-bottom: 20px; color: #fff; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+                        Audio Plugins</h1>
+                    <p style="font-size: 1.5rem; color: #aaa; letter-spacing: 2px;">COMING SOON</p>
+                    <p style="font-size: 1rem; color: #666; margin-top: 20px; max-width: 500px; line-height: 1.6;">
+                        We are currently developing next-generation audio tools.<br>
+                        Stay tuned for our upcoming release.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- VIEW: SUPPORT -->
+        <div id="view-support" class="view-section" hidden>
+            <section class="support" id="support-expanded">
+                <div class="wrap reveal">
+                    <h2 class="sTitle">Support</h2>
+                    <p class="sDesc">
+                        From installation to license management and technical support.<br>
+                        QLAUDIO is here to ensure your creative flow never stops.
+                    </p>
+
+                    <!-- Contact Card -->
+                    <div class="contactCard">
+                        <div class="cCol">
+                            <div class="cLabel">General Inquiries</div>
+                            <div class="cValue">contact@qlaudio.com</div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ SECTION (GENERAL) -->
+                    <div class="faq-container reveal"
+                        style="max-width: 800px; margin: 80px auto 100px; text-align: left;">
+                        <h3 style="font-size: 2rem; margin-bottom: 40px; text-align: center;">Frequently Asked
+                            Questions
+                        </h3>
+
+                        <!-- 1. My Order / Downloads -->
+                        <div class="faq-item" style="border-bottom: 1px solid #333; padding: 25px 0;">
+                            <h4 style="font-size: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; user-select: none;"
+                                onclick="const p = this.nextElementSibling; const s = this.querySelector('span'); p.hidden = !p.hidden; s.innerText = p.hidden ? '+' : '-';">
+                                Where can I check my purchase history and downloads?
+                                <span style="opacity:0.5; font-size: 1.5rem;">+</span>
+                            </h4>
+                            <p style="margin-top: 20px; color: #aaa; line-height: 1.6;" hidden>
+                                You can access your purchase history and download links anytime via the <strong>'My
+                                    Orders'</strong> button in the top-right menu of our site.
+                                Alternatively, you can verify your library directly through the
+                                <a href="https://app.lemonsqueezy.com/my-orders" target="_blank"
+                                    style="color: #fff; text-decoration: underline;">LemonSqueezy Orders
+                                    Dashboard</a>.
+                            </p>
+                        </div>
+
+                        <!-- 2. Commercial Use -->
+                        <div class="faq-item" style="border-bottom: 1px solid #333; padding: 25px 0;">
+                            <h4 style="font-size: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; user-select: none;"
+                                onclick="const p = this.nextElementSibling; const s = this.querySelector('span'); p.hidden = !p.hidden; s.innerText = p.hidden ? '+' : '-';">
+                                Can I use these sounds in commercial projects?
+                                <span style="opacity:0.5; font-size: 1.5rem;">+</span>
+                            </h4>
+                            <p style="margin-top: 20px; color: #aaa; line-height: 1.6;" hidden>
+                                Yes, absolutely. All QLAUDIO products come with a <strong>100% Royalty-Free</strong>
+                                commercial license.
+                                You can use them in music releases, films, games, broadcasting, and online content
+                                without any additional fees or copyright reporting.
+                            </p>
+                        </div>
+
+                        <!-- 3. License Type -->
+                        <div class="faq-item" style="border-bottom: 1px solid #333; padding: 25px 0;">
+                            <h4 style="font-size: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; user-select: none;"
+                                onclick="const p = this.nextElementSibling; const s = this.querySelector('span'); p.hidden = !p.hidden; s.innerText = p.hidden ? '+' : '-';">
+                                Is the license a subscription or a lifetime purchase?
+                                <span style="opacity:0.5; font-size: 1.5rem;">+</span>
+                            </h4>
+                            <p style="margin-top: 20px; color: #aaa; line-height: 1.6;" hidden>
+                                Currently, QLAUDIO products are sold as <strong>Perpetual (Lifetime)
+                                    Licenses</strong>.
+                                A single purchase grants you unlimited rights to use the product forever. There are
+                                no
+                                monthly fees or hidden subscriptions.
+                            </p>
+                        </div>
+
+                        <!-- 4. Installation Limits -->
+                        <div class="faq-item" style="border-bottom: 1px solid #333; padding: 25px 0;">
+                            <h4 style="font-size: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; user-select: none;"
+                                onclick="const p = this.nextElementSibling; const s = this.querySelector('span'); p.hidden = !p.hidden; s.innerText = p.hidden ? '+' : '-';">
+                                How many computers can I install the product on?
+                                <span style="opacity:0.5; font-size: 1.5rem;">+</span>
+                            </h4>
+                            <p style="margin-top: 20px; color: #aaa; line-height: 1.6;" hidden>
+                                We do not strictly limit installation on your own <strong>personal devices</strong>.
+                                However, installing on public or shared computers (e.g., classrooms, rental studios)
+                                is
+                                prohibited.
+                                Sharing your license key, unauthorized distribution, resale, or uploading
+                                installation
+                                files to the internet is strictly forbidden and subject to legal action.
+                            </p>
+                        </div>
+
+                        <!-- 5. Refund Policy -->
+                        <div class="faq-item" style="border-bottom: 1px solid #333; padding: 25px 0;">
+                            <h4 style="font-size: 1.2rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; margin: 0; user-select: none;"
+                                onclick="const p = this.nextElementSibling; const s = this.querySelector('span'); p.hidden = !p.hidden; s.innerText = p.hidden ? '+' : '-';">
+                                Do you offer refunds?
+                                <span style="opacity:0.5; font-size: 1.5rem;">+</span>
+                            </h4>
+                            <p style="margin-top: 20px; color: #aaa; line-height: 1.6;" hidden>
+                                Due to the nature of digital commodities, refunds are generally not possible once
+                                the
+                                product has been downloaded or license issued.
+                                However, if you experience technical issues that prevent the product from
+                                functioning,
+                                please contact our support team for resolution.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="supportVisual reveal">
+                        <img src="./assets/images/vst/studio_life_dark.webp" alt="Creative Studio">
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+
+        <!-- VIEW: MIDI DETAIL (New Page) -->
+        <div id="view-midi-detail" class="view-section" hidden>
+            <section class="midi-detail-content"
+                style="background: #000; color: #fff; padding: 100px 0 140px 0; min-height: 100vh;">
+                <div class="wrap box">
+
+                    <!-- Header -->
+                    <div style="text-align: center; margin-bottom: 80px;">
+                        <div
+                            style="margin-bottom: 24px; color: #888; font-size: 14px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">
+                            Product Series</div>
+                        <h1 style="font-size: 56px; line-height: 1.1; font-weight: 800; margin-bottom: 24px;">Piano
+                            MIDI
+                            Pack<br></h1>
+                        <p style="font-size: 20px; color: #bbb; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+                            Unlock your melodic potential. <br>
+                            5 Genres. 600 MIDI Files. 100% Royalty-Free.
+                        </p>
+                    </div>
+
+                    <!-- Detailed Points -->
+                    <div class="midi-detailed-points reveal"
+                        style="max-width: 1000px; margin: 0 auto 120px auto; display: flex; flex-direction: column; gap: 120px;">
+
+                        <!-- Point 1 -->
+                        <div class="mp-row" style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 300px;">
+                                <div
+                                    style="color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 16px; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 4px;">
+                                    Point 1</div>
+                                <h3 style="font-size: 36px; margin-bottom: 24px; color: #fff; line-height: 1.2;">
+                                    Clear
+                                    Information</h3>
+                                <p style="font-size: 18px; color: #bbb; line-height: 1.6; margin-bottom: 24px;">
+                                    Every file contains <strong>Chord Progression, Key, and BPM</strong> metadata
+                                    clearly labeled.<br>
+                                    Instance usability without guesswork.
+                                </p>
+                                <ul style="color: #888; line-height: 1.8; list-style: none; padding: 0;">
+                                    <li style="margin-bottom: 8px;">✅ <strong>Chord Info:</strong> Em7_A7...
+                                        directly in
+                                        filename</li>
+                                    <li style="margin-bottom: 8px;">✅ <strong>Key & BPM:</strong> Sorted for instant
+                                        integration</li>
+                                </ul>
+                            </div>
+                            <div
+                                style="flex: 1; min-width: 300px; background: #111; padding: 40px; border-radius: 16px; border: 1px solid #333; box-shadow: 0 20px 50px rgba(0,0,0,0.5);">
+                                <div
+                                    style="font-family: 'Courier New', monospace; color: #ddd; font-size: 14px; line-height: 1.8;">
+                                    <div
+                                        style="border-bottom: 1px solid #222; padding-bottom: 8px; margin-bottom: 8px; color: #888; font-size: 12px;">
+                                        📁 MIDI Files</div>
+                                    <div style="margin-bottom:8px; display:flex; gap:10px;"><span
+                                            style="color:#666">♪</span> <span>GM key_Em7_D7_GM7_CM7_90.mid</span>
+                                    </div>
+                                    <div style="margin-bottom:8px; display:flex; gap:10px;"><span
+                                            style="color:#666">♪</span> <span>GM key_GM7_A7_Cm7_GM7_90.mid</span>
+                                    </div>
+                                    <div style="margin-bottom:8px; display:flex; gap:10px;"><span
+                                            style="color:#666">♪</span> <span>AbM key_AbM7_DbM7_Dbm13_70.mid</span>
+                                    </div>
+                                    <div style="margin-bottom:8px; display:flex; gap:10px;"><span
+                                            style="color:#666">♪</span> <span>Em key_Em7_Am7_B7_Em_90.mid</span>
+                                    </div>
+                                    <div style="opacity: 0.5; margin-top: 10px;">...and 600+ more</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Point 2 -->
+                        <div class="mp-row"
+                            style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap; flex-direction: row-reverse;">
+                            <div style="flex: 1; min-width: 300px;">
+                                <div
+                                    style="color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 16px; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 4px;">
+                                    Point 2</div>
+                                <h3 style="font-size: 36px; margin-bottom: 24px; color: #fff; line-height: 1.2;">
+                                    High
+                                    Quality MIDI</h3>
+                                <p style="font-size: 18px; color: #bbb; line-height: 1.6; margin-bottom: 24px;">
+                                    <strong>Total Editing Freedom.</strong> Change instruments, tweak notes,
+                                    velocity,
+                                    and tempo without any audio artifacts.<br>
+                                    Unlike loops, you control the performance details.
+                                </p>
+                            </div>
+                            <div style="flex: 1; min-width: 300px;">
+                                <img src="assets/images/drag&drop.webp" alt="Drag and Drop MIDI"
+                                    style="width: 100%; border-radius: 16px; box-shadow: 0 0 0 1px #333, 0 40px 100px rgba(0,0,0,0.5);">
+                            </div>
+                        </div>
+
+                        <!-- Point 3 -->
+                        <div class="mp-row" style="display: flex; align-items: center; gap: 60px; flex-wrap: wrap;">
+                            <div style="flex: 1; min-width: 300px;">
+                                <div
+                                    style="color: #666; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 16px; border-bottom: 2px solid #333; display: inline-block; padding-bottom: 4px;">
+                                    Point 3</div>
+                                <h3 style="font-size: 36px; margin-bottom: 24px; color: #fff; line-height: 1.2;">
+                                    Lifetime License</h3>
+                                <p style="font-size: 18px; color: #bbb; line-height: 1.6; margin-bottom: 24px;">
+                                    <strong>Pay Once, Use Forever.</strong><br>
+                                    No subscriptions, no recurring fees. 100% Royalty-Free for your commercial music
+                                    releases.
+                                </p>
+                            </div>
+                            <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
+                                <div
+                                    style="width: 200px; height: 200px; border: 4px solid #333; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 80px; color: #fff; background: #111; box-shadow: 0 0 40px rgba(255,255,255,0.05);">
+                                    ♾️
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="midi-grid-header reveal" style="text-align: center; margin-bottom: 60px;">
+                        <h3 style="font-size: 32px; margin-bottom: 16px;">5 Emotional Line-ups</h3>
+                        <p style="color: #666;">Curated for your musical narrative.</p>
+                    </div>
+
+                    <div class="midi-grid reveal"
+                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: 0 auto 120px auto;">
+                        <!-- Pack 1 -->
+                        <div class="midi-card">
+                            <div class="mc-img"><img src="assets/images/Nocturne Groove MIDI Pack.webp"
+                                    alt="Nocturne Groove"></div>
+                            <div class="mc-info">
+                                <h3>Nocturne Groove</h3>
+                                <p class="mc-desc">Vibe of Nujabes & DJ Okawari. Urban melodies of J-Jazz Hiphop.
+                                </p>
+                                <div class="mc-foot"><span class="mc-price"><span
+                                            style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                        href="#" class="btnSmall">Buy Now</a></div>
+                                <div class="demo-track dark-theme" data-src="assets/musics/NocturneGroove.mp3"
+                                    style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333; display: flex; align-items: center; gap: 12px;">
+                                    <button class="play-btn"
+                                        style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg></button>
+                                    <div style="flex:1; height: 32px;"><canvas class="dt-wave"
+                                            style="width: 100%; height: 100%; display:block;"></canvas></div>
+                                    <div class="dt-time"
+                                        style="font-size: 11px; color: #888; font-variant-numeric: tabular-nums; width: 60px; text-align: right;">
+                                        0:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pack 2 -->
+                        <div class="midi-card">
+                            <div class="mc-img"><img src="assets/images/Tyoko Sky MIDI Pack.webp" alt="Tokyo Sky">
+                            </div>
+                            <div class="mc-info">
+                                <h3>Tokyo Sky</h3>
+                                <p class="mc-desc">Emotional swell like 'Your Name'. Intense Anime-style J-Core.</p>
+                                <div class="mc-foot"><span class="mc-price"><span
+                                            style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                        href="#" class="btnSmall">Buy Now</a></div>
+                                <div class="demo-track dark-theme" data-src="assets/musics/TokyoSky.mp3"
+                                    style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333; display: flex; align-items: center; gap: 12px;">
+                                    <button class="play-btn"
+                                        style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg></button>
+                                    <div style="flex:1; height: 32px;"><canvas class="dt-wave"
+                                            style="width: 100%; height: 100%; display:block;"></canvas></div>
+                                    <div class="dt-time"
+                                        style="font-size: 11px; color: #888; font-variant-numeric: tabular-nums; width: 60px; text-align: right;">
+                                        0:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pack 3 -->
+                        <div class="midi-card">
+                            <div class="mc-img"><img src="assets/images/Atelier Metropole MIDI Pack.webp"
+                                    alt="Atelier Metropole"></div>
+                            <div class="mc-info">
+                                <h3>Atelier Metropole</h3>
+                                <p class="mc-desc">Anomalie, FKJ style. Sophisticated Neo Soul & Jazz grooves.</p>
+                                <div class="mc-foot"><span class="mc-price"><span
+                                            style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                        href="#" class="btnSmall">Buy Now</a></div>
+                                <div class="demo-track dark-theme" data-src="assets/musics/AtelierMetropoleDemo.mp3"
+                                    style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333; display: flex; align-items: center; gap: 12px;">
+                                    <button class="play-btn"
+                                        style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg></button>
+                                    <div style="flex:1; height: 32px;"><canvas class="dt-wave"
+                                            style="width: 100%; height: 100%; display:block;"></canvas></div>
+                                    <div class="dt-time"
+                                        style="font-size: 11px; color: #888; font-variant-numeric: tabular-nums; width: 60px; text-align: right;">
+                                        0:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pack 4 -->
+                        <div class="mc-card">
+                            <div class="mc-img"><img src="assets/images/Golden Keys MIDI Pack.webp" alt="Golden Keys">
+                            </div>
+                            <div class="mc-info">
+                                <h3>Golden Keys</h3>
+                                <p class="mc-desc">Adele, Coldplay vibes. Billboard-style Pop & Modern R&B.</p>
+                                <div class="mc-foot"><span class="mc-price"><span
+                                            style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                        href="#" class="btnSmall">Buy Now</a></div>
+                                <div class="demo-track dark-theme" data-src="assets/musics/GoldenKeysDemo.mp3"
+                                    style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333; display: flex; align-items: center; gap: 12px;">
+                                    <button class="play-btn"
+                                        style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg></button>
+                                    <div style="flex:1; height: 32px;"><canvas class="dt-wave"
+                                            style="width: 100%; height: 100%; display:block;"></canvas></div>
+                                    <div class="dt-time"
+                                        style="font-size: 11px; color: #888; font-variant-numeric: tabular-nums; width: 60px; text-align: right;">
+                                        0:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pack 5 -->
+                        <div class="midi-card">
+                            <div class="mc-img"><img src="assets/images/Midnight Noir MIDI Pack.webp"
+                                    alt="Midnight Noir"></div>
+                            <div class="mc-info">
+                                <h3>Midnight Noir</h3>
+                                <p class="mc-desc">Trendy R&B/Soul blended with Jazz sophistication.</p>
+                                <div class="mc-foot"><span class="mc-price"><span
+                                            style="font-size: 16px; text-decoration: line-through; color: #666; margin-right: 8px; font-weight: 400;">$129.00</span>$69.00</span><a
+                                        href="#" class="btnSmall">Buy Now</a></div>
+                                <div class="demo-track dark-theme" data-src="assets/musics/Midnight Noir.mp3"
+                                    style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #333; display: flex; align-items: center; gap: 12px;">
+                                    <button class="play-btn"
+                                        style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;"><svg
+                                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                        </svg></button>
+                                    <div style="flex:1; height: 32px;"><canvas class="dt-wave"
+                                            style="width: 100%; height: 100%; display:block;"></canvas></div>
+                                    <div class="dt-time"
+                                        style="font-size: 11px; color: #888; font-variant-numeric: tabular-nums; width: 60px; text-align: right;">
+                                        0:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bundle Highlight -->
+                    <div class="midi-bundle reveal"
+                        style="background: #111; border: 1px solid #333; border-radius: 32px; padding: 0; overflow: hidden; display: flex; flex-wrap: wrap;">
+                        <div class="mb-img-wrap" style="flex: 1 1 500px; min-height: 400px; position: relative;">
+                            <img src="assets/images/MIDI Pack Series 1 Bundle.webp" alt="Series 1 Bundle"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="mb-content"
+                            style="flex: 1 1 400px; padding: 60px; display: flex; flex-direction: column; justify-content: center;">
+                            <div class="mb-tag"
+                                style="background: #fff; color: #000; align-self: flex-start; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 14px; margin-bottom: 24px; text-transform: uppercase;">
+                                Best Value</div>
+                            <h2 style="font-size: 40px; margin-bottom: 16px; line-height: 1.1;">MIDI Pack Series
+                                1<br>Bundle Pack</h2>
+                            <p style="color: #aaa; margin-bottom: 32px; font-size: 18px; line-height: 1.6;">
+                                Get the Complete Collection.<br>
+                                <span style="color:#fff">Total 1200 files (600 MIDI + 600 Audio)</span>
+                            </p>
+                            <div class="mb-price"
+                                style="font-size: 36px; font-weight: 800; margin-bottom: 32px; color: #fff;">
+                                $169.00 <span
+                                    style="font-size: 20px; color: #555; text-decoration: line-through; margin-left:10px;">$245.00</span>
+                            </div>
+                            <a href="#" class="btnWhite"
+                                style="align-self: flex-start; padding: 18px 48px; border-radius: 50px; font-weight: 700; text-decoration: none; font-size: 18px; background: #fff; color: #000; transition: transform 0.2s;">Buy
+                                Bundle</a>
+                        </div>
+                    </div>
+
+                    <!-- Audio Demos List -->
+                    <div class="bundle-demos reveal"
+                        style="margin-top: 100px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                        <h3 style="text-align: center; margin-bottom: 40px; font-size: 28px; color: #fff;">Included
+                            Series Demos</h3>
+
+                        <!-- Track 1 -->
+                        <div class="demo-track dark-theme" data-src="assets/musics/NocturneGroove.mp3"
+                            style="display: flex; align-items: center; gap: 20px; padding: 24px 0; border-bottom: 1px solid #222;">
+                            <button class="play-btn"
+                                style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                            <div style="width: 180px;">
+                                <h4 style="font-size: 18px; margin-bottom: 4px; color: #fff;">Nocturne Groove</h4>
+                                <p style="font-size: 13px; color: #666; margin:0;">J-Jazz Hiphop</p>
+                            </div>
+                            <div style="flex:1; height: 40px;"><canvas class="dt-wave"
+                                    style="width: 100%; height: 100%; display:block;"></canvas></div>
+                            <div class="dt-time" style="font-size: 13px; color: #888; width: 60px; text-align: right;">
+                                0:00</div>
+                        </div>
+
+                        <!-- Track 2 -->
+                        <div class="demo-track dark-theme" data-src="assets/musics/TokyoSky.mp3"
+                            style="display: flex; align-items: center; gap: 20px; padding: 24px 0; border-bottom: 1px solid #222;">
+                            <button class="play-btn"
+                                style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                            <div style="width: 180px;">
+                                <h4 style="font-size: 18px; margin-bottom: 4px; color: #fff;">Tokyo Sky</h4>
+                                <p style="font-size: 13px; color: #666; margin:0;">Anime-style J-Core</p>
+                            </div>
+                            <div style="flex:1; height: 40px;"><canvas class="dt-wave"
+                                    style="width: 100%; height: 100%; display:block;"></canvas></div>
+                            <div class="dt-time" style="font-size: 13px; color: #888; width: 60px; text-align: right;">
+                                0:00</div>
+                        </div>
+
+                        <!-- Track 3 -->
+                        <div class="demo-track dark-theme" data-src="assets/musics/AtelierMetropoleDemo.mp3"
+                            style="display: flex; align-items: center; gap: 20px; padding: 24px 0; border-bottom: 1px solid #222;">
+                            <button class="play-btn"
+                                style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                            <div style="width: 180px;">
+                                <h4 style="font-size: 18px; margin-bottom: 4px; color: #fff;">Atelier Metropole</h4>
+                                <p style="font-size: 13px; color: #666; margin:0;">Neo Soul & Jazz</p>
+                            </div>
+                            <div style="flex:1; height: 40px;"><canvas class="dt-wave"
+                                    style="width: 100%; height: 100%; display:block;"></canvas></div>
+                            <div class="dt-time" style="font-size: 13px; color: #888; width: 60px; text-align: right;">
+                                0:00</div>
+                        </div>
+
+                        <!-- Track 4 -->
+                        <div class="demo-track dark-theme" data-src="assets/musics/GoldenKeysDemo.mp3"
+                            style="display: flex; align-items: center; gap: 20px; padding: 24px 0; border-bottom: 1px solid #222;">
+                            <button class="play-btn"
+                                style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                            <div style="width: 180px;">
+                                <h4 style="font-size: 18px; margin-bottom: 4px; color: #fff;">Golden Keys</h4>
+                                <p style="font-size: 13px; color: #666; margin:0;">Pop & R&B</p>
+                            </div>
+                            <div style="flex:1; height: 40px;"><canvas class="dt-wave"
+                                    style="width: 100%; height: 100%; display:block;"></canvas></div>
+                            <div class="dt-time" style="font-size: 13px; color: #888; width: 60px; text-align: right;">
+                                0:00</div>
+                        </div>
+
+                        <!-- Track 5 -->
+                        <div class="demo-track dark-theme" data-src="assets/musics/Midnight Noir.mp3"
+                            style="display: flex; align-items: center; gap: 20px; padding: 24px 0; border-bottom: 1px solid #222;">
+                            <button class="play-btn"
+                                style="background:none; border:none; color:#fff; cursor:pointer; padding:0; display:flex;">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                </svg>
+                            </button>
+                            <div style="width: 180px;">
+                                <h4 style="font-size: 18px; margin-bottom: 4px; color: #fff;">Midnight Noir</h4>
+                                <p style="font-size: 13px; color: #666; margin:0;">Trendy R&B/Soul</p>
+                            </div>
+                            <div style="flex:1; height: 40px;"><canvas class="dt-wave"
+                                    style="width: 100%; height: 100%; display:block;"></canvas></div>
+                            <div class="dt-time" style="font-size: 13px; color: #888; width: 60px; text-align: right;">
+                                0:00</div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- STATS / GLOBAL IMPACT -->
+    <section class="globalStats">
+        <div class="wrap">
+            <div class="gsGrid">
+                <div class="gsItem">
+                    <div class="gsValue">150+</div>
+                    <div class="gsLabel">Countries</div>
+                </div>
+                <div class="gsDivider"></div>
+                <div class="gsItem">
+                    <div class="gsValue">5k+</div>
+                    <div class="gsLabel">Pro Producers</div>
+                </div>
+                <div class="gsDivider"></div>
+                <div class="gsItem">
+                    <div class="gsValue">10M+</div>
+                    <div class="gsLabel">Sounds Created</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer matched to reference -->
+    <footer class="siteFooter">
+        <div class="wrap footerGrid">
+            <div class="footerBrand">
+                <div class="fLogo">QLAUDIO</div>
+                <div class="fCopy">Copyright © 2026. QLAUDIO All rights reserved.</div>
+            </div>
+
+            <div class="footerLinks">
+                <div class="fCol">
+                    <h4>Products</h4>
+                    <a href="#product">Software Instrument</a>
+                    <a href="#plugins">Audio PlugIns</a>
+                    <a href="#product/midi-bundle">Sample Pack</a>
+                </div>
+                <div class="fCol">
+                    <h4>Support</h4>
+                    <a href="#support-view">Support</a>
+                    <a href="https://app.lemonsqueezy.com/my-orders" target="_blank">My Order</a>
+                </div>
+                <div class="fCol">
+                    <h4>Social</h4>
+                    <a href="https://www.instagram.com/qlaudio_official/" target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/@qlaudio_official" target="_blank">YouTube</a>
+                    <!-- <a href="#">SoundCloud</a> -->
+                </div>
+                <div class="fCol">
+                    <h4>Contact</h4>
+                    <!-- <div class="fInfoRow">
+                        <span>Hours</span>
+                        <span>AM 10:00 - PM 7:00</span>
+                    </div> -->
+                    <div class="fInfoRow">
+                        <span>Email</span>
+                        <span>contact@qlaudio.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+</body>
+
+</html>
