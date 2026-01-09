@@ -713,6 +713,24 @@
                             Buy Now
                         </a>
 
+                        <!-- Lemon Squeezy Purchase Tracking -->
+                        <script>
+                            window.createLemonSqueezy = function () {
+                                window.LemonSqueezy.Setup({
+                                    eventHandler: (event) => {
+                                        if (event.event === 'Payment.Success' || event.event === 'Checkout.Success') {
+                                            gtag('event', 'conversion', {
+                                                'send_to': 'AW-16608004369/NxEMCOaw-8wZEJGSqO89',
+                                                'value': 299.0,
+                                                'currency': 'USD',
+                                                'transaction_id': event.data && event.data.order ? event.data.order.id : ''
+                                            });
+                                        }
+                                    }
+                                });
+                            };
+                        </script>
+
                         <ul style="list-style: none; padding: 0; font-size: 13px; color: #666; line-height: 2.2;">
                             <li style="border-bottom: 1px dashed #eee;">• Instant Digital Download</li>
                             <li style="border-bottom: 1px dashed #eee;">• Includes 36 Instruments</li>
