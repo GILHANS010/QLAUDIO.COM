@@ -2,15 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16608004369"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'AW-16608004369');
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>QLAUDIO - VST & Plugins</title>
@@ -38,6 +30,15 @@
     <link rel="icon" type="image/webp" href="./assets/favicon/logo-white.webp">
 
     <link rel="stylesheet" href="./styles.css?v=2">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16608004369"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16608004369');
+    </script>
 </head>
 
 <body>
@@ -719,12 +720,8 @@
                                 window.LemonSqueezy.Setup({
                                     eventHandler: (event) => {
                                         if (event.event === 'Payment.Success' || event.event === 'Checkout.Success') {
-                                            gtag('event', 'conversion', {
-                                                'send_to': 'AW-16608004369/NxEMCOaw-8wZEJGSqO89',
-                                                'value': 299.0,
-                                                'currency': 'USD',
-                                                'transaction_id': event.data && event.data.order ? event.data.order.id : ''
-                                            });
+                                            const orderId = event.data && event.data.order ? event.data.order.id : '';
+                                            window.location.href = "./success.html?order_id=" + orderId;
                                         }
                                     }
                                 });

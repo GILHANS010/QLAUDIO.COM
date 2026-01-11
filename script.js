@@ -562,17 +562,32 @@ document.addEventListener('DOMContentLoaded', () => {
             if (views.midiDetail) views.midiDetail.hidden = false;
             document.body.classList.add('product-page');
             setTimeout(() => { window.dispatchEvent(new Event('resize')); }, 100);
+            if (typeof gtag === 'function') {
+                gtag('event', 'SamplePack', { 'send_to': 'AW-16608004369' });
+            }
         } else if (hash.startsWith('#product')) {
             if (views.product) views.product.hidden = false;
             document.body.classList.add('product-page');
             setTimeout(() => { window.dispatchEvent(new Event('resize')); }, 100);
+            if (typeof gtag === 'function') {
+                gtag('event', 'SoftwareInstrument', { 'send_to': 'AW-16608004369' });
+            }
         } else if (hash === '#support-view') {
             if (views.support) views.support.hidden = false;
+            if (typeof gtag === 'function') {
+                gtag('event', 'SupportView', { 'send_to': 'AW-16608004369' });
+            }
         } else if (hash === '#plugins') {
             if (views.plugins) views.plugins.hidden = false;
             setTimeout(() => { window.dispatchEvent(new Event('resize')); }, 100);
+            if (typeof gtag === 'function') {
+                gtag('event', 'AudioPlugIns', { 'send_to': 'AW-16608004369' });
+            }
         } else {
             if (views.home) views.home.hidden = false;
+            if (typeof gtag === 'function') {
+                gtag('event', 'HomeView', { 'send_to': 'AW-16608004369' });
+            }
         }
         setTimeout(observeElements, 100);
     };
