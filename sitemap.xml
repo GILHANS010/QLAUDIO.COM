@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://qlaudio.com/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/vst/josun_platinum.webp</image:loc>
+      <image:title>Josun Series Platinum Bundle</image:title>
+      <image:caption>The Ultimate K-Sound Collection. 36 Authentic Instruments.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/MIDI Pack Series 1 Bundle.webp</image:loc>
+      <image:title>MIDI Pack Series 1 Bundle</image:title>
+      <image:caption>Total 1200 files (600 MIDI + 600 Audio)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/full_ensemble_1.webp</image:loc>
+      <image:title>Josun Series Full Ensemble</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/vst/studio_life_dark.webp</image:loc>
+      <image:title>QLAUDIO Support</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/StringsGUI.webp</image:loc>
+      <image:title>Strings GUI (Hyeon-ak)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/WoodwindsGUI.webp</image:loc>
+      <image:title>Woodwinds GUI (Gwan-ak)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://qlaudio.com/assets/images/PercussionGUI.webp</image:loc>
+      <image:title>Percussion GUI (Ta-ak)</image:title>
+    </image:image>
+  </url>
+</urlset>
