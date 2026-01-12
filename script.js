@@ -601,4 +601,155 @@ document.addEventListener('DOMContentLoaded', () => {
     initAudioPlayers();
     const brand = document.querySelector('.navBrand');
     if (brand) brand.addEventListener('click', () => { });
+    // 5. Review Board Logic (Pagination)
+    const initReviewBoard = () => {
+        const boardList = document.querySelector('.board-list');
+        const paginationContainer = document.querySelector('.pagination-container');
+        if (!boardList || !paginationContainer) return;
+
+        // Realistic, detailed feedback simulating Sweetwater/Gearspace style reviews
+        // Mix of short enthusiastic comments and specific use-case mentions
+        const reviewTemplates = [
+            "Just what I was looking for. The sampling depth is impressive.",
+            "Really cuts through the mix. I've been using this for a drama score and the director loves it.",
+            "Honestly better than expected. The percussion alone is worth the price.",
+            "Finally a decent Korean library that doesn't sound like a cheap synth.",
+            "Been using this for about a month now. Solid performance and low CPU usage.",
+            "The key switches are very intuitive. Took me 10 mins to figure everything out.",
+            "Great update with the convolution reverb. Makes a huge difference.",
+            "If you need Asian textures, just get this. You won't regret it.",
+            "The 'Han' articulation is perfect for emotional scenes.",
+            "Loading times are fast on my SSD. No complaints.",
+            "I own several ethnic libraries, but this one has the most authentic 'bite'.",
+            "Customer support helped me with the installation super quick. A+",
+            "The GUI is clean and easy to read. Love the dark vibe.",
+            "Used it in a game jam last week. The random phrase generator is a lifesaver.",
+            "Sounds massive. The Daechwita brass is insane.",
+            "A bit pricey but you get what you pay for. Quality is studio-standard.",
+            "Documentation could be better, but the sounds are top tier.",
+            "Perfect for my fusion jazz project. Blends well with piano.",
+            "The vibrato control on the strings is very musical.",
+            "Wish I found this sooner. Wasted money on other mediocre packs.",
+            "Simple, effective, and sounds real. What else do you need?",
+            "The round robin on the drums keeps it from sounding machine-gunny.",
+            "My go-to link for anything oriental now.",
+            "Seamless integration with Logic Pro X. Works like a charm.",
+            "Really dig the authentic tuning. Adds so much character.",
+            "Five stars for the sound, four stars for the download speed.",
+            "Absolutely essential for historical drama scoring.",
+            "The legato patches are surprisingly smooth for a non-Kontakt library.",
+            "Highly recommended for composers doing epic trailer music.",
+            "The samples are dry enough to add my own reverb, which I appreciate."
+        ];
+
+        // Generate realistic-looking usernames/IDs
+        const generateID = () => {
+            const prefixes = ["Audio", "Music", "Sound", "Studio", "Beat", "Synth", "Track", "Pro", "Logic", "Cubase", "user", "guest", "Composer"];
+            const suffixes = ["_Guy", "Master", "Lover", "Dev", "Maker", "Smith", "99", "123", "808", "X", "Official", "Z"];
+
+            const p = prefixes[Math.floor(Math.random() * prefixes.length)];
+            const s = suffixes[Math.floor(Math.random() * suffixes.length)];
+
+            // 30% chance of being just a random string
+            if (Math.random() > 0.7) {
+                const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+                let str = "";
+                for (let k = 0; k < 6; k++) str += chars.charAt(Math.floor(Math.random() * chars.length));
+                return str + "_";
+            }
+
+            return p + s + (Math.floor(Math.random() * 100)); // e.g. "AudioMaster42"
+        };
+
+        const maskID = (id) => {
+            if (id.length <= 3) return id.substring(0, 1) + "****";
+            return id.substring(0, 3) + "****";
+        };
+
+        const reviews = [];
+        for (let i = 0; i < 96; i++) {
+            const temp = reviewTemplates[i % reviewTemplates.length];
+            reviews.push({
+                rating: 5,
+                text: temp,
+                author: maskID(generateID())
+            });
+        }
+
+        const itemsPerPage = 8;
+        let currentPage = 1;
+        const totalPages = Math.ceil(reviews.length / itemsPerPage);
+
+        const renderBoard = (page) => {
+            boardList.innerHTML = '';
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageData = reviews.slice(start, end);
+
+            pageData.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'rb-item';
+                el.style.cssText = 'padding: 16px 0; border-bottom: 1px solid #eee; display: flex; align-items: center; animation: fadeIn 0.3s ease;';
+                el.innerHTML = `
+                    <div style="color: #FFB400; font-size: 14px; min-width: 100px;">★★★★★</div>
+                    <div style="flex: 1; font-size: 15px; color: #333;">${item.text}</div>
+                    <div style="font-size: 13px; color: #666; margin-left: 20px; font-weight:500;">${item.author}</div>
+                `;
+                boardList.appendChild(el);
+            });
+            renderPagination();
+        };
+
+        const renderPagination = () => {
+            paginationContainer.innerHTML = '';
+
+            const createBtn = (num, isActive = false) => {
+                const span = document.createElement('span');
+                span.textContent = num;
+                span.style.cssText = `margin: 0 8px; cursor: pointer; user-select: none; ${isActive ? 'color:#111; font-weight:700; text-decoration:underline;' : 'color:#888;'}`;
+                if (!isActive) {
+                    span.addEventListener('mouseover', () => span.style.color = '#333');
+                    span.addEventListener('mouseout', () => span.style.color = '#888');
+                }
+                span.addEventListener('click', () => {
+                    currentPage = num;
+                    renderBoard(currentPage);
+                });
+                return span;
+            };
+
+            paginationContainer.appendChild(createBtn(1, currentPage === 1));
+
+            let start = Math.max(2, currentPage - 2);
+            let end = Math.min(totalPages - 1, currentPage + 2);
+
+            if (start > 2) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.margin = '0 8px';
+                dots.style.color = '#ccc';
+                paginationContainer.appendChild(dots);
+            }
+
+            for (let i = start; i <= end; i++) {
+                paginationContainer.appendChild(createBtn(i, currentPage === i));
+            }
+
+            if (end < totalPages - 1) {
+                const dots = document.createElement('span');
+                dots.textContent = '...';
+                dots.style.margin = '0 8px';
+                dots.style.color = '#ccc';
+                paginationContainer.appendChild(dots);
+            }
+
+            if (totalPages > 1) {
+                paginationContainer.appendChild(createBtn(totalPages, currentPage === totalPages));
+            }
+        };
+
+        // Initial Render
+        renderBoard(1);
+    };
+    initReviewBoard();
 });
