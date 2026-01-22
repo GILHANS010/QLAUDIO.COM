@@ -3341,3 +3341,155 @@ html {
         transform: translateX(0);
     }
 }
+/* ===== PROMO POPUP ===== */
+.promo-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.4s;
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.promo-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.promo-modal {
+    background: #fff;
+    border-radius: 24px;
+    padding: 0;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.25);
+    transform: scale(0.95) translateY(20px);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.promo-overlay.active .promo-modal {
+    transform: scale(1) translateY(0);
+}
+
+.promo-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+    z-index: 10;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.promo-close:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: rotate(90deg);
+}
+
+.promo-img-wrap {
+    width: 100%;
+    line-height: 0;
+}
+
+.promo-img-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.promo-actions {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+}
+
+.promo-btn-copy {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.promo-btn-copy:hover {
+    background: #000;
+    transform: translateY(-2px);
+}
+
+.promo-btn-copy:active {
+    transform: translateY(0);
+}
+
+.promo-btn-disabled {
+    background: transparent;
+    color: #999;
+    border: none;
+    padding: 12px;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.promo-btn-disabled:hover {
+    color: #666;
+}
+
+/* Toast for copy feedback */
+.copy-toast {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    pointer-events: none;
+    z-index: 20;
+    white-space: nowrap;
+}
+
+.copy-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}

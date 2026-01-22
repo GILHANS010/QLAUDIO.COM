@@ -752,4 +752,70 @@ document.addEventListener('DOMContentLoaded', () => {
         renderBoard(1);
     };
     initReviewBoard();
+
+    // 6. Promo Popup Logic
+    const initPromoPopup = () => {
+        const popup = document.getElementById('promoPopup');
+        const closeBtn = document.getElementById('promoClose');
+        const copyBtn = document.getElementById('promoCopyBtn');
+        const toast = document.getElementById('copyToast');
+
+        if (!popup) return;
+
+        const closePopup = () => {
+            popup.classList.remove('active');
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 400);
+        };
+
+        const showPopup = () => {
+            popup.style.display = 'flex';
+            popup.offsetHeight; // Force reflow
+            popup.classList.add('active');
+        };
+
+        closeBtn.addEventListener('click', closePopup);
+        popup.addEventListener('click', (e) => {
+            if (e.target === popup) closePopup();
+        });
+
+        copyBtn.addEventListener('click', () => {
+            navigator.clipboard.writeText('THANKYOU30').then(() => {
+                toast.classList.add('show');
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 2000);
+            });
+        });
+
+        const checkTrigger = () => {
+            const hash = window.location.hash;
+
+            // 1. Landing Page Context
+            if (!hash || hash === '#' || hash === '') {
+                if (!sessionStorage.getItem('discountPopup_shown_home')) {
+                    setTimeout(() => {
+                        showPopup();
+                        sessionStorage.setItem('discountPopup_shown_home', 'true');
+                    }, 2000); // 2s delay for smoother entrance
+                }
+            }
+            // 2. Josun Platinum Bundle Context
+            else if (hash === '#product/josun-platinum' || hash.includes('josun-platinum')) {
+                if (!sessionStorage.getItem('discountPopup_shown_bundle')) {
+                    setTimeout(() => {
+                        showPopup();
+                        sessionStorage.setItem('discountPopup_shown_bundle', 'true');
+                    }, 1000);
+                }
+            }
+        };
+
+        window.addEventListener('hashchange', checkTrigger);
+        // Initial check
+        checkTrigger();
+    };
+
+    initPromoPopup();
 });
